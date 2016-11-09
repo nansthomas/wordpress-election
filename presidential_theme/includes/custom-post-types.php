@@ -96,6 +96,6 @@ function creation_propositions()
         )
     );
 
-    register_post_type( 'meeting' , $args );
+    register_post_type( 'proposition' , $args );
 
 }
