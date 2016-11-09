@@ -1,0 +1,3 @@
+/*
+HERE GOES THE MAIN SCRIPT
+*/
