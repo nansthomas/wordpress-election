@@ -1,5 +1,9 @@
 <?php 
 
+// WHEN CREATING A NEW CUSTOM TYPE, 
+// DONT FOGET TO MODIFY THE ROLES.PHP FILE 
+// ACCORDING TO THE CAPABILITIES YOU CREATE
+
 add_action( 'init', 'creation_meetings' );
 
 function creation_meetings()
