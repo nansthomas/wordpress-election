@@ -49,3 +49,53 @@ function creation_meetings()
     register_post_type( 'meeting' , $args );
 
 }
+
+add_action( 'init', 'creation_propositions' );
+
+function creation_propositions()
+{
+
+  $labels = array(
+        'name'               => 'propositions',
+        'singular_name'      => 'proposition',
+        'all_items'          => 'Tous les propositions',
+        'add_new'            => 'Ajouter un proposition',
+        'add_new_item'       => 'Ajouter un nouvel proposition',
+        'edit_item'          => "Modifier le proposition",
+        'new_item'           => 'Nouveau proposition',
+        'view_item'          => "Voir le proposition",
+        'search_items'       => "Rechercher un proposition",
+        'not_found'          => 'Pas de résultat',
+        'not_found_in_trash' => 'Pas de résultat',
+        'parent_item_colon'  => 'proposition parent:',
+        'menu_name'          => 'propositions',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => false,
+        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments' ),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => -2,
+        'menu_icon'           => 'dashicons-cart',
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => false,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => array( 'slug' => 'proposition' ),
+        'capability_type' => 'proposition',
+        'capabilities' => array(
+            'publish_posts' => 'publish_propositions',
+            'edit_posts' => 'edit_propositions',
+            'edit_post' => 'edit_proposition',
+            'delete_post' => 'delete_proposition'
+        )
+    );
+
+    register_post_type( 'meeting' , $args );
+
+}
