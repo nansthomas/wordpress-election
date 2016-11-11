@@ -5,6 +5,8 @@
 // ACCORDING TO THE CAPABILITIES YOU CREATE
 
 add_action( 'init', 'creation_meetings' );
+add_action( 'init', 'creation_propositions' );
+add_action( 'init', 'creation_news' );
 
 function creation_meetings()
 {
@@ -53,8 +55,6 @@ function creation_meetings()
     register_post_type( 'meeting' , $args );
 
 }
-
-add_action( 'init', 'creation_propositions' );
 
 function creation_propositions()
 {
