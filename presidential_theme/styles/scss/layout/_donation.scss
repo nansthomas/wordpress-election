@@ -1,0 +1,38 @@
+.donation {
+	width: 100%;
+	height: 100px;
+	background: #202A51;
+}
+
+.donation__container {
+	width: 50%;
+	margin: auto;
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+}
+
+.donation__title {
+	height: 100%;
+	margin: 40px 0;
+	font-size: 25px;
+}
+
+.donation__amounts {
+	width: 50%;
+	list-style: none;
+	margin: 40px 0;
+	font-weight: 500;
+	font-size: 19px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.donation__amount {
+	display: inline-block;
+	background: #0785F2;
+	border-radius: 5%;
+	text-align: center;
+	padding: 6px 10px;
+	cursor: pointer;
+}

@@ -71,4 +71,16 @@
 
 </section>
 
+<section class="donation">
+	<div class="donation__container">
+		<h3 class="donation__title">Faire un don</h3>
+		<ul class="donation__amounts">
+			<li class="donation__amount">5€</li>
+			<li class="donation__amount">10€</li>
+			<li class="donation__amount">20€</li>
+			<li class="donation__amount">50€</li>
+		</ul>
+	</div>
+</section>
+
 <?php get_footer(); ?>
