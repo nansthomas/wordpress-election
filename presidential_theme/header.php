@@ -16,7 +16,7 @@
     <body <?php body_class(); ?>>
         <header id="header">
             <div class="nav">
-            <?php 
+<!--             <?php 
               $args=array(
                   'theme_location' => 'header', // nom du slug
                   'menu' => 'header_fr', // nom à donner cette occurence du menu
@@ -25,6 +25,6 @@
                   // voir les autres arguments possibles sur le codex
               );
               wp_nav_menu($args);
-            ?>
+            ?> -->
             </div>
         </header>
