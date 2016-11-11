@@ -24,11 +24,13 @@
   'layout/homeHeader',
   'layout/homeBlog',
   'layout/newsletterForm',
-  'layout/donation';
+  'layout/homeProgram';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/donation',
+  'components/socials';
 
 // 6. Page-specific styles
 @import

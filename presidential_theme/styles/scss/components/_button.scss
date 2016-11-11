@@ -1,0 +1,18 @@
+.button {
+	background: #0785F2;
+	width: 135px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #FFF;
+
+	span {
+		text-transform: uppercase;
+		width: 100%;
+		font-weight: 500;
+	}
+}

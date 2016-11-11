@@ -5,6 +5,12 @@
     }
 }
 
+@mixin semiMedium {
+    @media (max-width: #{$medium}) {
+        @content;
+    }
+}
+
 @mixin medium {
     @media (max-width: #{$large}) {
         @content;

@@ -6,7 +6,7 @@
 		<h1 class="homeHeader__title">L'homme invisible</h1>
 		<h3 class="homeHeader__subtitle">Pour une République transparente</h3>
 
-		<a href="#" class="homeHeader__button">
+		<a href="#" class="button">
 			<span>Voter</span>
 		</a>
 
@@ -16,7 +16,7 @@
 
 <form class="newsletterForm">
 	
-	<h3 class="newsletterForm__title">Restez informé des actualités</h3>
+	<h3 class="newsletterForm__title">Soyez informé des actualités</h3>
 	
 	<div class="newsletterForm__fields">
 		<input type="text" placeholder="Prénom">
@@ -72,6 +72,7 @@
 </section>
 
 <section class="donation">
+
 	<div class="donation__container">
 		<h3 class="donation__title">Faire un don</h3>
 		<ul class="donation__amounts">
@@ -81,6 +82,28 @@
 			<li class="donation__amount">50€</li>
 		</ul>
 	</div>
+
 </section>
+
+<section class="homeProgram">
+	
+	<div class="homeProgram__infos">
+		<h3 class="homeProgram__title">La France a besoin d’un programme efficace, le voici </h3>
+		<p class="homeProgram__description">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas porro eligendi sequi tenetur totam illum! Nobis nulla deserunt, optio similique animi quos mollitia aperiam consequuntur ipsam maxime numquam minima?<br><br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas porro eligendi sequi tenetur totam illum! Nobis nulla deserunt, optio similique animi quos mollitia aperiam consequuntur ipsam maxime numquam minima?
+		</p>
+		<a href="#" class="button">
+			<span>Projet</span>
+		</a>
+	</div>
+	<div class="homeProgram__image"></div>
+
+</section>
+
+<div class="socials">
+	<h4 class="socials__title">Nous rejoindre sur les réseaux sociaux</h4>
+	<!-- SIDEBAR SOCIALS HERE-->
+</div>
 
 <?php get_footer(); ?>

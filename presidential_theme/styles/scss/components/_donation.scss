@@ -10,12 +10,25 @@
 	color: #FFF;
 	display: flex;
 	justify-content: space-between;
+
+	@include medium {
+		width: 60%;
+	}
+
+	@include semiMedium {
+		width: 95%;
+	}
 }
 
 .donation__title {
 	height: 100%;
 	margin: 40px 0;
 	font-size: 25px;
+
+	@include semiMedium {
+		font-size: 16px;
+		padding-top: 4px;
+	}
 }
 
 .donation__amounts {
@@ -26,6 +39,10 @@
 	font-size: 19px;
 	display: flex;
 	justify-content: space-between;
+
+	@include semiMedium {
+		width: 60%;
+	}
 }
 
 .donation__amount {

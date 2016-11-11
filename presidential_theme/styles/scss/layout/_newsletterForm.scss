@@ -1,17 +1,22 @@
 .newsletterForm {
 	display: block;
 	width: 700px;
-	height: 160px;
+	height: 180px;
 	margin: auto;
 	background: #F6F8FA;
 	position: relative;
 	z-index: 10;
-	margin-top: -70px;
+	margin-top: -90px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+
+	@include semiMedium {
+		display: none;
+	}
 }
 
 .newsletterForm__title {
 	text-align: center;
-	padding: 20px;
+	padding: 40px 0 20px 0;
 	font-size: 16px;
 }
 
