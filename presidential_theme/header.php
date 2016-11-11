@@ -1,7 +1,5 @@
-<?php
-
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
@@ -18,6 +16,16 @@
     <body <?php body_class(); ?>>
         <header id="header">
             <div class="nav">
-                <?php wp_nav_menu('My First Menu'); ?>
+
+                <?php 
+                $args=array(
+                    'theme_location' => 'header', // nom du slug
+                    'menu' => 'header_fr', // nom à donner cette occurence du menu
+                    'menu_class' => 'menu_header container', // class à attribuer au menu
+                    'menu_id' => 'menu_id' // id à attribuer au menu
+                    // voir les autres arguments possibles sur le codex
+                );
+                wp_nav_menu($args);
+                ?>
             </div>
         </header>

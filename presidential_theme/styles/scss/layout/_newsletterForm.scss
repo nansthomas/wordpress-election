@@ -1,0 +1,38 @@
+.newsletterForm {
+	display: block;
+	width: 700px;
+	height: 160px;
+	margin: auto;
+	background: #F6F8FA;
+	position: relative;
+	z-index: 10;
+	margin-top: -70px;
+}
+
+.newsletterForm__title {
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+}
+
+.newsletterForm__fields {
+	width: 550px;
+	margin: auto;
+
+	input {
+		padding: 15px 10px;
+		font-family: Gotham;
+
+	}
+
+	input[type=submit] {
+		border: none;
+    	background: #0785F2;
+    	color: #FFF;
+    	font-size: 15px;
+    	cursor: pointer;
+    	height: 51.5px;
+   		vertical-align: top;
+   		border-radius: 4px;
+	}
+}
