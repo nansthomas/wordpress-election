@@ -16,6 +16,12 @@ function admin_role() {
     $role->add_cap('delete_proposition');
     $role->add_cap('edit_proposition');
     $role->add_cap('edit_propositions');
-    $role->add_cap('publish_propositions');
+    $role->add_cap('publish_propositions');    
+
+    // PROPOSITIONS ROLES
+    $role->add_cap('delete_new');
+    $role->add_cap('edit_new');
+    $role->add_cap('edit_news');
+    $role->add_cap('publish_news');
 
 }
