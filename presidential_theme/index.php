@@ -6,7 +6,7 @@
     <?php the_content(); ?>
 </div> <!-- /content -->
     <?php
-    endwhile; //resetting the page loop
-    wp_reset_query(); //resetting the page query
+        endwhile; //resetting the page loop
+        wp_reset_query(); //resetting the page query
     ?>
 <?php get_footer(); ?>
