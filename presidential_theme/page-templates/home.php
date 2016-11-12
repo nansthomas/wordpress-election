@@ -33,7 +33,9 @@ if ( have_posts() ) {
 
 		<input type="submit" value="<?php the_field('newsletter-bouton-texte');?>">
 	</div>
-
+	<?php
+	}
+} ?>
 </form>
 
 <section class="homeBlog">
@@ -114,7 +116,5 @@ if ( have_posts() ) {
 	<h4 class="socials__title">Nous rejoindre sur les réseaux sociaux</h4>
 	<!-- SIDEBAR SOCIALS HERE-->
 </div>
-	<?php
-	}
-} ?>
+
 <?php get_footer(); ?>
