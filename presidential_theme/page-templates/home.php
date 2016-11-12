@@ -10,6 +10,7 @@ get_header(); ?>
 
 if ( have_posts() ) {
 	while(have_posts() ) {
+		the_post();
 	?>
     <div class="homeHeader__content">
 		<h1 class="homeHeader__title"><?php the_field('titre');?></h1>
