@@ -12,11 +12,11 @@ if ( have_posts() ) {
 	while(have_posts() ) {
 	?>
     <div class="homeHeader__content">
-		<h1 class="homeHeader__title"><?php the_field('titre')?></h1>
-		<h3 class="homeHeader__subtitle">Pour une République transparente</h3>
+		<h1 class="homeHeader__title"><?php the_field('titre');?></h1>
+		<h3 class="homeHeader__subtitle"><?php the_field('sous-titre');?></h3>
 
 		<a href="#" class="button">
-			<span>Voter</span>
+			<span><?php the_field('titre-bouton');?></span>
 		</a>
 
 	</div>
@@ -25,13 +25,13 @@ if ( have_posts() ) {
 
 <form class="newsletterForm">
 	
-	<h3 class="newsletterForm__title">Soyez informé des actualités</h3>
+	<h3 class="newsletterForm__title"><?php the_field('newsletter-titre');?></h3>
 	
 	<div class="newsletterForm__fields">
 		<input type="text" placeholder="Prénom">
 		<input type="mail" placeholder="Email">
 
-		<input type="submit" value="INSCRIPTION">
+		<input type="submit" value="<?php the_field('newsletter-bouton-texte');?>">
 	</div>
 
 </form>
