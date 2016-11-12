@@ -1,0 +1,23 @@
+.donationFormMax {
+	width: 50%;
+	margin: 10px auto 40px auto;
+
+	@include medium {
+		width: 90%;
+	}
+}
+
+.donationFormMax__title {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.donationFormMax__fields {
+	display: flex;
+	justify-content: space-between;
+
+	input {
+		width: 95%;
+		margin: 10px 5px;
+	}
+}

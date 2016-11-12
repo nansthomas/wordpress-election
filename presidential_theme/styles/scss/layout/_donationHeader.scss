@@ -1,0 +1,27 @@
+.donationPage__header {
+	height: 240px;
+	width: 100%;
+	background: #202A51;
+}
+
+.donationPage__title {
+	margin: 0 auto;
+	color: #FFF;
+	text-align: center;
+	padding: 110px;
+
+	&:after {
+		display: block;
+		text-align: center;
+		width: 5%;
+		content: '';
+    	padding: 0 0 2px 0;
+    	background: #FFF;
+    	margin: 12px auto;
+	}
+
+	@include semiMedium {
+		font-size: 20px;
+		margin: 10px auto;
+	}
+}

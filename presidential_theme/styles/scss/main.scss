@@ -19,18 +19,25 @@
 
 // 4. Layout-related sections
 @import
+  // Main partials
   'layout/header',
   'layout/footer',
+  // Home page
   'layout/homeHeader',
   'layout/homeBlog',
-  'layout/newsletterForm',
-  'layout/homeProgram';
+  'layout/homeProgram',
+  // Donations page
+  'layout/donationHeader',
+  // Independents 
+  'layout/newsletterForm';
 
 // 5. Components
 @import
   'components/button',
-  'components/donation',
-  'components/socials';
+  'components/donationFormMin',
+  'components/donationFormMax',
+  'components/socials',
+  'components/_input.scss';
 
 // 6. Page-specific styles
 @import

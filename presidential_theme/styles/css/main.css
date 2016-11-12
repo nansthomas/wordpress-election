@@ -581,41 +581,6 @@ body {
   font-size: 13px;
   line-height: 1.5; }
 
-.newsletterForm {
-  display: block;
-  width: 700px;
-  height: 180px;
-  margin: auto;
-  background: #F6F8FA;
-  position: relative;
-  z-index: 10;
-  margin-top: -90px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75); }
-  @media (max-width: 700px) {
-    .newsletterForm {
-      display: none; } }
-
-.newsletterForm__title {
-  text-align: center;
-  padding: 40px 0 20px 0;
-  font-size: 16px; }
-
-.newsletterForm__fields {
-  width: 550px;
-  margin: auto; }
-  .newsletterForm__fields input {
-    padding: 15px 10px;
-    font-family: Gotham; }
-  .newsletterForm__fields input[type=submit] {
-    border: none;
-    background: #0785F2;
-    color: #FFF;
-    font-size: 15px;
-    cursor: pointer;
-    height: 51.5px;
-    vertical-align: top;
-    border-radius: 4px; }
-
 .homeProgram {
   width: 100%;
   display: -webkit-box;
@@ -654,6 +619,64 @@ body {
     .homeProgram__image {
       display: none; } }
 
+.donationPage__header {
+  height: 240px;
+  width: 100%;
+  background: #202A51; }
+
+.donationPage__title {
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  padding: 110px; }
+  .donationPage__title:after {
+    display: block;
+    text-align: center;
+    width: 5%;
+    content: '';
+    padding: 0 0 2px 0;
+    background: #FFF;
+    margin: 12px auto; }
+  @media (max-width: 700px) {
+    .donationPage__title {
+      font-size: 20px;
+      margin: 10px auto; } }
+
+.newsletterForm {
+  display: block;
+  width: 700px;
+  height: 180px;
+  margin: auto;
+  background: #F6F8FA;
+  position: relative;
+  z-index: 10;
+  margin-top: -90px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75); }
+  @media (max-width: 700px) {
+    .newsletterForm {
+      display: none; } }
+
+.newsletterForm__title {
+  text-align: center;
+  padding: 40px 0 20px 0;
+  font-size: 16px; }
+
+.newsletterForm__fields {
+  width: 550px;
+  margin: auto; }
+  .newsletterForm__fields input {
+    padding: 15px 10px;
+    font-family: Gotham; }
+  .newsletterForm__fields input[type=submit] {
+    border: none;
+    background: #0785F2;
+    color: #FFF;
+    font-size: 15px;
+    cursor: pointer;
+    height: 51.5px;
+    vertical-align: top;
+    border-radius: 4px; }
+
 .button {
   background: #0785F2;
   width: 135px;
@@ -674,12 +697,12 @@ body {
     width: 100%;
     font-weight: 500; }
 
-.donation {
+.donationFormMin {
   width: 100%;
   height: 100px;
   background: #202A51; }
 
-.donation__container {
+.donationFormMin__container {
   width: 50%;
   margin: auto;
   color: #FFF;
@@ -690,22 +713,22 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   @media (max-width: 1000px) {
-    .donation__container {
+    .donationFormMin__container {
       width: 60%; } }
   @media (max-width: 700px) {
-    .donation__container {
+    .donationFormMin__container {
       width: 95%; } }
 
-.donation__title {
+.donationFormMin__title {
   height: 100%;
   margin: 40px 0;
   font-size: 25px; }
   @media (max-width: 700px) {
-    .donation__title {
+    .donationFormMin__title {
       font-size: 16px;
       padding-top: 4px; } }
 
-.donation__amounts {
+.donationFormMin__amounts {
   width: 50%;
   list-style: none;
   margin: 40px 0;
@@ -718,16 +741,38 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   @media (max-width: 700px) {
-    .donation__amounts {
+    .donationFormMin__amounts {
       width: 60%; } }
 
-.donation__amount {
+.donationFormMin__amount {
   display: inline-block;
   background: #0785F2;
   border-radius: 5%;
   text-align: center;
   padding: 6px 10px;
   cursor: pointer; }
+
+.donationFormMax {
+  width: 50%;
+  margin: 10px auto 40px auto; }
+  @media (max-width: 1000px) {
+    .donationFormMax {
+      width: 90%; } }
+
+.donationFormMax__title {
+  margin: 20px auto;
+  text-align: center; }
+
+.donationFormMax__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .donationFormMax__fields input {
+    width: 95%;
+    margin: 10px 5px; }
 
 .socials {
   background: url("../../img/background-socials.png");
@@ -749,3 +794,17 @@ body {
   @media (max-width: 700px) {
     .socials__title {
       display: none; } }
+
+input {
+  padding: 15px 10px;
+  font-family: Gotham; }
+
+input[type=submit] {
+  border: none;
+  background: #0785F2;
+  color: #FFF;
+  font-size: 15px;
+  cursor: pointer;
+  height: 51.5px;
+  vertical-align: top;
+  border-radius: 4px; }
