@@ -59,7 +59,7 @@ get_header(); ?>
 			<img class="homeBlog__articleImage" src="<?php echo home_url( 'wp-content/themes/presidential_theme/img/article-homeBlog.png' ); ?>" alt="">
 			<h5 class="homeBlog__articleTitle"><?php the_title(); ?></h5>
 			<div class="homeBlog__articleDescription">
-				<?php get_excerpt(); ?>
+				<?php echo get_excerpt(); ?>
 			</div>
 		</article>
 		<?php 
