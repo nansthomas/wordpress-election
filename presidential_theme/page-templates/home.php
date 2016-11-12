@@ -6,9 +6,13 @@
 get_header(); ?>
 
 <section class="homeHeader">
-    
+    <?php 
+
+if ( have_posts() ) {
+	while(have_posts() ) {
+	?>
     <div class="homeHeader__content">
-		<h1 class="homeHeader__title">L'homme invisible</h1>
+		<h1 class="homeHeader__title"><?php the_field('titre')?></h1>
 		<h3 class="homeHeader__subtitle">Pour une République transparente</h3>
 
 		<a href="#" class="button">
@@ -110,5 +114,7 @@ get_header(); ?>
 	<h4 class="socials__title">Nous rejoindre sur les réseaux sociaux</h4>
 	<!-- SIDEBAR SOCIALS HERE-->
 </div>
-
+	<?php
+	}
+} ?>
 <?php get_footer(); ?>
