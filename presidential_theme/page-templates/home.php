@@ -2,9 +2,8 @@
     /*
     Template Name: Page accueil 
     */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <section class="homeHeader">
     
