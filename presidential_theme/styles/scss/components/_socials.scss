@@ -1,0 +1,22 @@
+.socials {
+	background: url('../../img/background-socials.png');
+	background-size: cover; 
+	background-position: center;
+	height: 210px;
+	display: flex;
+}
+
+.socials__title {
+	font-size: 24px;
+	color: #FFFFFF;
+	width: 30%;
+	margin: 70px 140px;
+
+	@include medium {
+		margin: 70px 80px;
+	}
+
+	@include semiMedium {
+		display: none;
+	}
+}

@@ -16,7 +16,7 @@ wp_enqueue_style( 'google-font' );
   
   
 // enregistrement d'un nouveau style
-wp_register_style( 'main_style', get_template_directory_uri() . '/styles/style.css' );
+wp_register_style( 'main_style', get_template_directory_uri() . '/styles/css/main.css' );
 
 // appel du style dans la page
 wp_enqueue_style( 'main_style' );

@@ -1,0 +1,24 @@
+// Responsive manager
+@mixin small {
+    @media (max-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin semiMedium {
+    @media (max-width: #{$medium}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: #{$large}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
