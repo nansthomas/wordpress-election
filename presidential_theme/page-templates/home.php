@@ -56,7 +56,14 @@ get_header(); ?>
 				$the_query->the_post();
 		?>
 		<article class="homeBlog__article">
-			<img class="homeBlog__articleImage" src="<?php echo home_url( 'wp-content/themes/presidential_theme/img/article-homeBlog.png' ); ?>" alt="">
+			<?php
+				if(has_post_thumbnail())
+				{	
+					echo '<div class="responsiveImage">';
+					the_post_thumbnail("thumbnail_new_homepage");
+					echo '</div>';
+				}
+			?>
 			<h5 class="homeBlog__articleTitle"><?php the_title(); ?></h5>
 			<div class="homeBlog__articleDescription">
 				<?php echo get_excerpt(); ?>
