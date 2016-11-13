@@ -6,11 +6,11 @@
 
 <?php get_header(); ?>
 
-<section class="homeHeader">
+<section class="largeHeader">
     
-    <div class="homeHeader__content">
-		<h1 class="homeHeader__title">L'homme invisible</h1>
-		<h3 class="homeHeader__subtitle">Pour une République transparente</h3>
+    <div class="largeHeader__content">
+		<h1 class="largeHeader__title">L'homme invisible</h1>
+		<h3 class="largeHeader__subtitle">Pour une République transparente</h3>
 
 		<a href="#" class="button">
 			<span>Voter</span>

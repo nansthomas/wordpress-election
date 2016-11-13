@@ -1,0 +1,56 @@
+.largeHeader {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url('../../img/background-homeHeader.png');
+	background-size: cover; 
+	background-position: center;
+	display: flex;
+    align-items: center;
+}
+
+.largeHeader__content {
+	position: absolute;
+	width: 50%;
+	color: #FFFFFF;
+	margin-left: 15%;
+	z-index: 10;
+
+	@include medium{
+		width: 100%;	
+		margin-left: 5%;
+	}
+
+	@include small{
+		margin-left: 2%;
+	}
+
+}
+
+.largeHeader__title {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 500;
+
+	@include small{
+		font-size: 35px;
+	}
+}
+
+.largeHeader__subtitle {
+	font-size: 20px;
+	font-weight: 300;
+	opacity: 0.7;
+
+	@include small{
+		font-size: 17px;
+	}
+}
+
+.largeHeader__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: auto;
+}
