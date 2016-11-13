@@ -80,34 +80,18 @@ get_header(); ?>
 </section>
 
 <?php 
-if( have_rows('donation_row') ) 
+if( have_rows('flexible_bottom') ) 
 {
      // loop through the rows of data
-    while ( have_rows('donation_row') ) 
+    while ( have_rows('flexible_bottom') ) 
     {
     	the_row();
     	$layout = get_row_layout();
-    	echo $layout;
+    	echo $layout;	
     	include get_template_directory() . '/views/flexible-parts/'. $layout . '.php';
     }
 }
 ?>
-
-<section class="homeProgram">
-	
-	<div class="homeProgram__infos">
-		<h3 class="homeProgram__title">La France a besoin d’un programme efficace, le voici </h3>
-		<p class="homeProgram__description">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas porro eligendi sequi tenetur totam illum! Nobis nulla deserunt, optio similique animi quos mollitia aperiam consequuntur ipsam maxime numquam minima?<br><br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas porro eligendi sequi tenetur totam illum! Nobis nulla deserunt, optio similique animi quos mollitia aperiam consequuntur ipsam maxime numquam minima?
-		</p>
-		<a href="#" class="button">
-			<span>Projet</span>
-		</a>
-	</div>
-	<div class="homeProgram__image"></div>
-
-</section>
 
 <div class="socials">
 	<h4 class="socials__title">Nous rejoindre sur les réseaux sociaux</h4>
