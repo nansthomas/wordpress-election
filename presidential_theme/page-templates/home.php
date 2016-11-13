@@ -91,19 +91,6 @@ if( have_rows('donation_row') )
     }
 }
 ?>
-<section class="donationFormMin">
-
-	<div class="donationFormMin__container">
-		<h3 class="donationFormMin__title">Faire un don</h3>
-		<ul class="donationFormMin__amounts">
-			<li class="donationFormMin__amount">5€</li>
-			<li class="donationFormMin__amount">10€</li>
-			<li class="donationFormMin__amount">20€</li>
-			<li class="donationFormMin__amount">50€</li>
-		</ul>
-	</div>
-
-</section>
 
 <section class="homeProgram">
 	
