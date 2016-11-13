@@ -87,6 +87,7 @@ if( have_rows('donation_row') )
     {
     	the_row();
     	$layout = get_row_layout();
+    	echo $layout;
     	include get_template_directory() . '/views/flexible-parts/'. $layout . '.php';
     }
 }
