@@ -82,7 +82,6 @@ get_header(); ?>
 <?php 
 if( have_rows('donation_row') ) 
 {
-	echo 'ooooo';
      // loop through the rows of data
     while ( have_rows('donation_row') ) 
     {
