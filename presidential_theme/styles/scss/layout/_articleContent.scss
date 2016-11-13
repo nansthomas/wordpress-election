@@ -2,4 +2,12 @@
     padding: 100px 180px 150px 330px;
     font-size: 18px;
     line-height: 1.5;
+
+    @include medium {
+    	padding: 50px 100px;
+    }
+
+    @include medium {
+    	padding: 50px 20px;
+    }
 }

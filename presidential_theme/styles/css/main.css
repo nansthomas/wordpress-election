@@ -603,6 +603,12 @@ body {
   padding: 100px 180px 150px 330px;
   font-size: 18px;
   line-height: 1.5; }
+  @media (max-width: 1000px) {
+    .articleContent {
+      padding: 50px 100px; } }
+  @media (max-width: 1000px) {
+    .articleContent {
+      padding: 50px 20px; } }
 
 .largeHeader {
   position: relative;
