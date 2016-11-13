@@ -79,6 +79,18 @@ get_header(); ?>
 
 </section>
 
+<?php 
+if( have_rows('donation_row') ) 
+{
+     // loop through the rows of data
+    while ( have_rows('donation_row') ) 
+    {
+    	the_row();
+    	$layout = get_row_layout();
+    	include get_template_directory() . '/views/flexible-parts/'. $layout . '.php';
+    }
+}
+?>
 <section class="donationFormMin">
 
 	<div class="donationFormMin__container">
