@@ -12,10 +12,10 @@
 	<div class="donationFormMin__container">
 		<h3 class="donationFormMin__title"><?php echo $donation_title; ?></h3>
 		<ul class="donationFormMin__amounts">
-			<li class="donationFormMin__amount"><?php echo $first_amount; ?>€</li>
-			<li class="donationFormMin__amount"><?php echo $second_amount; ?>€</li>
-			<li class="donationFormMin__amount"><?php echo $third_amount; ?>€</li>
-			<li class="donationFormMin__amount"><?php echo $fourth_amount; ?>€</li>
+			<li class=""><?php echo $first_amount; ?></li>
+			<li class=""><?php echo $second_amount; ?></li>
+			<li class=""><?php echo $third_amount; ?></li>
+			<li class=""><?php echo $fourth_amount; ?></li>
 		</ul>
 	</div>
 
