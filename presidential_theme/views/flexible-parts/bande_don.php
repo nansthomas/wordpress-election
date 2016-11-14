@@ -19,6 +19,7 @@
 			<li class="custom"><input type="number" class="custom_price" name="" value=""><a class="ok_button">OK</a></li>
       <form action="/" method="POST" class="custom_stripe_form">
         <script
+          class="toto"
           src="https://checkout.stripe.com/checkout.js"
           class="stripe-button"
           data-amount="2000">
@@ -32,7 +33,8 @@
 <script type="text/javascript">
   var custom_price = document.querySelector('.custom_price');
   var custom_form = document.querySelector('.custom_stripe_form');
-  console.log(custom_form);
+  var toto = document.querySelector('.toto');
+  console.log(toto);
   custom_price.addEventListener('input', function () {
     console.log(custom_price.value);
   });
