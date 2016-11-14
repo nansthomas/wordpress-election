@@ -33,7 +33,7 @@
 <script type="text/javascript">
   var custom_price = document.querySelector('.custom_price');
   var custom_form = document.querySelector('.custom_stripe_form');
-  var toto = document.querySelector('.toto');
+  var toto = document.getAttribute('data-amount');
   console.log(toto);
   custom_price.addEventListener('input', function () {
     console.log(custom_price.value);
