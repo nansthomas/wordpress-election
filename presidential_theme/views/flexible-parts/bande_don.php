@@ -31,14 +31,14 @@
 </section>
 
 <script type="text/javascript">
-  // var custom_price = document.querySelector('.custom_price');
   var custom_form_script = document.querySelector('.custom_form_script');
-  console.log(custom_form_script);
 
   var toto = custom_form_script.getAttribute('data-amount');
   console.log(toto);
 
-  // custom_price.addEventListener('input', function () {
-  //   console.log(custom_price.value);
-  // });
+  custom_price.addEventListener('input', function () {
+    custom_form_script.setAttribute('data-amount', custom_price.value);
+    console.log('attribue :' + toto);
+    console.log('input :' + custom_price.value);
+  });
 </script>
