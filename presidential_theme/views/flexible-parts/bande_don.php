@@ -3,7 +3,7 @@
 	$donation_title = get_sub_field('texte_don');
 	$first_amount = get_sub_field('premier_montant');
 	$second_amount = get_sub_field('deuxieme_montant');
-	$third_amount = get_sub_field('troisième_montant');
+	$third_amount = get_sub_field('troisieme_montant');
 	$fourth_amount = get_sub_field('quatrieme_montant');
 ?>
 
