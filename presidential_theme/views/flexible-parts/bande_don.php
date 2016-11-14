@@ -19,7 +19,6 @@
 			<li class="custom"><input type="number" class="custom_price" name="" value=""><a class="ok_button">OK</a></li>
       <form action="/" method="POST">
         <script
-          class="custom_form_script"
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="pk_test_vWGaBesvcQvmQpkJYZ1BSI9g"
           data-amount="2000"
@@ -36,7 +35,7 @@
 </section>
 
 <script type="text/javascript">
-  var custom_form_script = document.querySelector('.custom_form_script');
+  var custom_form_script = document.querySelector('.stripe-button');
   var custom_price = document.querySelector('.custom_price');
 
   var toto = custom_form_script.getAttribute('data-amount');
