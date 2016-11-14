@@ -18,13 +18,10 @@
 			<li class=""><?php echo $fourth_amount; ?></li>
 			<li class="custom"><input type="number" class="custom_price" name="" value=""><a class="ok_button">OK</a></li>
       <form action="/" method="POST" class="custom_stripe_form">
-        <script type="text/javascript">
-          var toto = 3000;
-        </script>
         <script
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="pk_test_vWGaBesvcQvmQpkJYZ1BSI9g"
-          data-amount=toto
+          data-amount="2000"
           data-name="Nansthomas"
           data-description="2 widgets"
           data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
