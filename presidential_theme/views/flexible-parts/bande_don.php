@@ -17,9 +17,9 @@
 			<li class=""><?php echo $third_amount; ?></li>
 			<li class=""><?php echo $fourth_amount; ?></li>
 			<li class="custom"><input type="number" class="custom_price" name="" value=""><a class="ok_button">OK</a></li>
-      <form action="/" method="POST" class="custom_stripe_form">
+      <form action="/" method="POST">
         <script
-          class="toto"
+          class="custom_form_script"
           src="https://checkout.stripe.com/checkout.js"
           class="stripe-button"
           data-amount="2000">
@@ -31,12 +31,14 @@
 </section>
 
 <script type="text/javascript">
-  var custom_price = document.querySelector('.custom_price');
-  var custom_form = document.querySelector('.custom_stripe_form');
-  var foo = document.querySelector('.toto');
-  var toto = foo.getAttribute('data-amount');
+  // var custom_price = document.querySelector('.custom_price');
+  var custom_form_script = document.querySelector('.custom_form_script');
+  console.log(custom_form_script);
+
+  var toto = custom_form_script.getAttribute('data-amount');
   console.log(toto);
-  custom_price.addEventListener('input', function () {
-    console.log(custom_price.value);
-  });
+
+  // custom_price.addEventListener('input', function () {
+  //   console.log(custom_price.value);
+  // });
 </script>
