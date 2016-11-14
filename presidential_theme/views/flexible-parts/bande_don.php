@@ -19,14 +19,9 @@
 			<li class="custom"><input type="number" class="custom_price" name="" value=""><a class="ok_button">OK</a></li>
       <form action="/" method="POST" class="custom_stripe_form">
         <script
-          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="pk_test_vWGaBesvcQvmQpkJYZ1BSI9g"
-          data-amount="2000"
-          data-name="Nansthomas"
-          data-description="2 widgets"
-          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-          data-locale="auto"
-          data-currency="eur">
+          src="https://checkout.stripe.com/checkout.js"
+          class="stripe-button"
+          data-amount="2000">
         </script>
       </form>
 		</ul>
