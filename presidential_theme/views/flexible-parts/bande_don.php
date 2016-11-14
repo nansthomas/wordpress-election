@@ -16,7 +16,28 @@
 			<li class=""><?php echo $second_amount; ?></li>
 			<li class=""><?php echo $third_amount; ?></li>
 			<li class=""><?php echo $fourth_amount; ?></li>
+			<li class="custom"><input type="number" name="" value=""><a class="ok_button">OK</a></li>
+      <form action="/" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_vWGaBesvcQvmQpkJYZ1BSI9g"
+          data-amount="2000"
+          data-name="Nansthomas"
+          data-description="2 widgets"
+          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+          data-locale="auto"
+          data-currency="eur">
+        </script>
+      </form>
 		</ul>
 	</div>
 
 </section>
+
+<script type="text/javascript">
+  var ok_button = document.querySelector('.ok_button');
+  var custom = document.querySelector('.custom');
+  ok_button.addEventListener('click', function () {
+    custom.display = 'none';
+  });
+</script>
