@@ -32,6 +32,7 @@
 
 <script type="text/javascript">
   var custom_form_script = document.querySelector('.custom_form_script');
+  var custom_price = document.querySelector('.custom_price');
 
   var toto = custom_form_script.getAttribute('data-amount');
   console.log(toto);
