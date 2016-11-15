@@ -9,6 +9,6 @@ $excerpt = strip_tags($excerpt);
 $excerpt = substr($excerpt, 0, 218);
 $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
 $excerpt = trim(preg_replace( '/s+/', ' ', $excerpt));
-$excerpt = $excerpt.'... <a href="'.$permalink.'">more</a>';
+$excerpt = $excerpt.'... <a href="'.$permalink.'">plus</a>';
 return $excerpt;
 }
