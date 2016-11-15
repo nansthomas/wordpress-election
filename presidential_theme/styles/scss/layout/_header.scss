@@ -1,5 +1,8 @@
 .header {
+	z-index: 100;
 	position: fixed;
+	background: #FFF;
+	width: 100%;
 }
 
 .header__nav ul{
@@ -7,10 +10,12 @@
     list-style: none;
 
     li {
-		margin-right : 20px;
+		margin-right : 40px;
 
     	a {
     		text-decoration: none;
+    		color: #000;
+			font-weight: 500;
     	}
     }
 } 
