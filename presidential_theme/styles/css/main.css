@@ -433,6 +433,21 @@ body {
   font-weight: 300;
   font-style: normal; }
 
+.header {
+  position: fixed; }
+
+.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+  .header__nav ul li {
+    margin-right: 20px; }
+    .header__nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500; }
+
 .footer {
   height: 200px;
   width: 100%;
@@ -673,7 +688,7 @@ body {
       text-decoration: none;
       font-size: 16px; }
     .shopProducts li h3 {
-      min-width: 245px;
+      min-width: 230px;
       display: inline-block; }
 
 .largeHeader {
