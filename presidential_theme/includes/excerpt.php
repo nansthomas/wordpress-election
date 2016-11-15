@@ -1,7 +1,7 @@
 <?php 
 
 function get_excerpt(){
-$permalink = the_permalink();
+$permalink = get_the_permalink();
 $excerpt = get_the_content();
 $excerpt = preg_replace(" ([.*?])",'',$excerpt);
 $excerpt = strip_shortcodes($excerpt);
