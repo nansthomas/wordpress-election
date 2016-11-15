@@ -47,9 +47,7 @@ get_header(); ?>
 	</div>
 
 </form>
-<div class="tweets">
-	<?php dynamic_sidebar( 'sidebar-social' ); ?>
-</div>
+
 <section class="homeBlog">
     
     <div class="homeBlog__container">
@@ -83,6 +81,10 @@ get_header(); ?>
 
 </section>
 
+<div class="tweets">
+	<?php dynamic_sidebar( 'sidebar-social' ); ?>
+</div>
+
 <?php 
 if( have_rows('flexible_bottom') ) 
 {
@@ -96,6 +98,7 @@ if( have_rows('flexible_bottom') )
     }
 }
 ?>
+
 
 <div class="socials">
 	<h4 class="socials__title">Nous rejoindre sur les réseaux sociaux</h4>
