@@ -19,17 +19,23 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
+get_header( 'shop' );
 
-get_header( 'shop' ); 
-$image = get_field('image');
-var_dump($image);
+if ( have_posts() ) {
+		while(have_posts() ) {
+			the_post();
+
+			$image = get_field('image_boutique');
+			var_dump($image);
 ?>
 	
-	<section class="headerShop" style= "background-image: url(<?php the_field('image'); ?>);">
+	<section class="headerShop" style= "background-image: url(<?php get_field('image_boutique'); ?>);">
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
 
 	<?php
+	}
+}
 		/**
 		 * woocommerce_before_main_content hook.
 		 *
