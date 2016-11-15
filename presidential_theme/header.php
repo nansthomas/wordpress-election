@@ -14,8 +14,8 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <header id="header">
-            <div class="nav">
+        <header class="header">
+            <div class="header__nav">
 
                 <?php 
                 $args=array(
