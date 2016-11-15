@@ -23,16 +23,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header( 'shop' );
 
 	if(is_archive(get_the_id())){
-		echo(get_the_ID());
 	    $image_boutique = get_field('image_boutique', 4);
 	    var_dump($image_boutique);
-	};
+
 ?>
 	
-	<section class="headerShop" style= "background-image: url(<?php $image_boutique; ?>);">
+	<section class="headerShop" style= "background-image: url(<?php echo $image_boutique; ?>);">
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
 	<?php
+}
 		/**
 		 * woocommerce_before_main_content hook.
 		 *
