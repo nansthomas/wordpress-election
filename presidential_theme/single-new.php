@@ -13,7 +13,7 @@
     
 			    <div class="largeHeader__content">
 					<h1 class="largeHeader__title"><?php the_title(); ?></h1>
-					<h3 class="largeHeader__subtitle"><?php get_field('subtitle'); ?></h3>
+					<h3 class="largeHeader__subtitle"><?php get_field('sous-titre'); ?></h3>
 					<h4><?php the_time('j F Y'); ?></h4>
 				</div>
 
