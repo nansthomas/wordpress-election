@@ -22,8 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
-<h1>HELLO</h1>
-
 <?php
 	/**
 	 * woocommerce_before_single_product hook.
