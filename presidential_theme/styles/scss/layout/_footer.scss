@@ -3,33 +3,52 @@
 	width: 100%;
 	background: #2067C6;
 	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
 	color: #FFFFFF;
 
+	@include medium {
+		padding-left: 50px;
+		height: auto;
+		flex-direction: column;
+	}
+
 	@include small {
+		padding-left: 20px;
 		height: auto;
 		flex-direction: column;
 	}
 }
 
+.footer__newsletterTitle {
+	margin-top: 35px;
+    font-size: 15px;
+}
+
+.footer__fields input {
+	height: 10px;
+	font-size: 15px;
+}
+
+.footer__fields input[type=submit] {
+	height: 44px;
+}
+
 .footer__columns {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+
+}
+
+.footer__column {
 	width: 120px;
-	margin-left: 20px;
-
-	&:first-child{
-		margin-left: 140px;
-
-		@include medium {
-			margin-left: 80px;
-		}
-	}
 
 	@include semiMedium {
 		width: 100px;
-		margin-left: 10px;
 	}
 
 	@include small {
-		margin-left: 80px;
 		width: 200px;
 	}
 }
