@@ -33,3 +33,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 <body class="wc-auth wp-core-ui">
 	<h1 id="wc-logo"><img src="<?php echo WC()->plugin_url(); ?>/assets/images/woocommerce_logo.png" alt="WooCommerce" /></h1>
 	<div class="wc-auth-content">
+
