@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); 
-$image = get_field('image');
+$image = get_field('image_boutique');
 var_dump($image);
 ?>
 	
