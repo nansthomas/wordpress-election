@@ -1,5 +1,4 @@
 <?php
-	echo 'oooo';
 	$donation_title = get_sub_field('texte_don');
 	$first_amount = get_sub_field('premier_montant');
 	$second_amount = get_sub_field('deuxieme_montant');
@@ -7,7 +6,7 @@
 	$fourth_amount = get_sub_field('quatrieme_montant');
 ?>
 
-<section class="donationFormMin">
+<section class="donationFormMin" id="give">
 
 	<div class="donationFormMin__container">
 		<h3 class="donationFormMin__title"><?php echo $donation_title; ?></h3>
@@ -43,7 +42,5 @@
 
   custom_price.addEventListener('input', function () {
     custom_form_script.setAttribute('data-amount', custom_price.value*100);
-    console.log('attribue :' + toto);
-    console.log('input :' + custom_price.value);
   });
 </script>
