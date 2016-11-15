@@ -28,7 +28,8 @@ get_header( 'shop' );
 
 ?>
 	
-	<section class="headerShop" style= "background-image: url(<?php echo $image_boutique; ?>);">
+	<section class="headerShop" style= "background-image: url('<?php echo $image_boutique; ?>');">
+		<?php echo $image_boutique; ?>
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
 	<?php
