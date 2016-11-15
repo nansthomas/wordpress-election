@@ -22,22 +22,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' );
 
-if ( have_posts() ) {
-		while(have_posts() ) {
-			the_post();
-
-			$image = get_field('image_boutique');
-			if( !empty($image_boutique) ): ?>
+	$image = get_queried_object_id();
+	var_dump($image);
 ?>
 	
 	<section class="headerShop" style= "background-image: url(<?php get_field('image_boutique'); ?>);">
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
-
 	<?php
-		endif;
-	}
-}
 		/**
 		 * woocommerce_before_main_content hook.
 		 *
