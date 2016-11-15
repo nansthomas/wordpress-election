@@ -22,8 +22,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' );
 
-	$image = get_queried_object_id();
-	echo $image;
+	if(is_archive(get_the_id())){
+	    $mygallery=get_field(get_the_id());
+	    echo 'ok';
+	};
 ?>
 	
 	<section class="headerShop" style= "background-image: url(<?php get_field('image_boutique'); ?>);">
