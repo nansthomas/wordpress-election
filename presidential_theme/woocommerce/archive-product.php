@@ -20,9 +20,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
+get_header( 'shop' ); 
+$image = get_field('image');
+var_dump($image);
+?>
 	
-	<section class="headerShop" style="background-image: (url='<?php the_field('image');?>'">
+	<section class="headerShop" style="background-image: url('<?php the_field('image'); ?>')">
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
 
