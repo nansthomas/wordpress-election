@@ -31,9 +31,6 @@ get_header( 'shop' );
 	</section>
 
 	<?php
-		endif;
-	}
-}
 		/**
 		 * woocommerce_before_main_content hook.
 		 *
