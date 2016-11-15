@@ -897,6 +897,12 @@ body {
     .socials__title {
       display: none; } }
 
+.tweet {
+  width: 60%;
+  margin: auto; }
+  .tweet li {
+    list-style: none; }
+
 input {
   padding: 15px 10px;
   font-family: Gotham; }
