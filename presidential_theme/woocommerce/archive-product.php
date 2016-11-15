@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header( 'shop' );
 
 	$image = get_queried_object_id();
-	var_dump($image);
+	echo $image;
 ?>
 	
 	<section class="headerShop" style= "background-image: url(<?php get_field('image_boutique'); ?>);">
