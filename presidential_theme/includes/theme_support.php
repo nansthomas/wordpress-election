@@ -4,7 +4,7 @@ function thumbnails_theme_support(){
     add_theme_support( 'post-thumbnails' );
   
   add_image_size("thumbnail_new_homepage",310,200,true);
-  add_image_size("thumbnail_annonce_full",1450,800,false);
+  add_image_size("thumbnail_new_full",1450,800,false);
   add_image_size("thumbnail_slide",1500,600,true);
 }
 
