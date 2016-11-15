@@ -24,5 +24,8 @@
 </section>
 
 <div class="articleContent"><?php the_content(); ?></div>
-
+<?php
+			}
+		}
+	?>
 <?php get_footer(); ?>
