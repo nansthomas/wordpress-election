@@ -1,7 +1,7 @@
 <?php
 register_sidebar( array(
     'name'          => __('Sidebar social links'),
-    'id'            => 'sidebar-footer-1',
+    'id'            => 'sidebar-social',
     'description'   => '',
     'class'         => '',
     'before_widget' => '<li id="%1$s" class="widget %2$s">',

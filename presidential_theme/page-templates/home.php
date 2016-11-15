@@ -47,7 +47,9 @@ get_header(); ?>
 	</div>
 
 </form>
-
+<div class="tweets">
+	<?php dynamic_sidebar( 'sidebar-social' ); ?>
+</div>
 <section class="homeBlog">
     
     <div class="homeBlog__container">
