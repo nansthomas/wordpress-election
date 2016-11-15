@@ -22,10 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' );
 
-if ( have_posts() ) {
-		while(have_posts() ) {
-			the_post();
-
 			$image = get_field('image_boutique');
 			if( !empty($image_boutique) ): ?>
 ?>
