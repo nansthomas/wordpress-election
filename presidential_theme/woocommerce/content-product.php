@@ -27,6 +27,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
+<h1>HELLO</h1>
+
 <li <?php post_class(); ?>>
 	<?php
 	/**
