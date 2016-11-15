@@ -897,10 +897,10 @@ body {
     .socials__title {
       display: none; } }
 
-.tweet {
+.tweets {
   width: 60%;
   margin: auto; }
-  .tweet li {
+  .tweets li {
     list-style: none; }
 
 input {
