@@ -5,7 +5,9 @@
 
 get_header(); ?>
 
-<section class="homeHeader">
+<section class="largeHeader">
+    
+    
     <?php 
 
  	$args = array(
@@ -19,15 +21,17 @@ get_header(); ?>
 		while(have_posts() ) {
 			the_post();
 	?>
-    <div class="homeHeader__content">
-		<h1 class="homeHeader__title"><?php the_field('titre');?></h1>
-		<h3 class="homeHeader__subtitle"><?php the_field('sous-titre');?></h3>
+    <div class="largeHeader__content">
+		<h1 class="largeHeader__title"><?php the_field('titre');?></h1>
+		<h3 class="largeHeader__subtitle"><?php the_field('sous-titre');?></h3>
 
 		<a href="#" class="button">
 			<span><?php the_field('titre-bouton');?></span>
 		</a>
 
 	</div>
+
+	<?php } } ?>
 
 </section>
 
@@ -41,9 +45,7 @@ get_header(); ?>
 
 		<input type="submit" value=<?php the_field('newsletter-bouton-texte');?>>
 	</div>
-	<?php
-	}
-} ?>
+
 </form>
 
 <section class="homeBlog">
