@@ -22,7 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' );
 
-if ( have_posts() ) {
 	$image = get_queried_object_id();
 	var_dump($image);
 ?>
