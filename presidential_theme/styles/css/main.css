@@ -639,14 +639,9 @@ body {
       margin-left: 2%; } }
 
 .largeHeader__title {
-  position: absolute;
-  width: 34%;
-  color: #FFFFFF;
-  margin-left: 15%; }
-  @media (max-width: 1000px) {
-    .homeHeader__content {
-      width: 100%;
-      margin-left: 5%; } }
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500; }
   @media (max-width: 500px) {
     .largeHeader__title {
       font-size: 35px; } }
@@ -656,7 +651,6 @@ body {
   font-weight: 300;
   opacity: 0.7; }
   @media (max-width: 500px) {
-
     .largeHeader__subtitle {
       font-size: 17px; } }
 
@@ -666,7 +660,6 @@ body {
   left: 0;
   width: 100%;
   height: auto; }
-
 
 .newsletterForm {
   display: block;
