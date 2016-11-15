@@ -25,7 +25,7 @@ $image = get_field('image');
 var_dump($image);
 ?>
 	
-	<section class="headerShop" style="background-image: url('<?php echo $image['url']; ?>')">
+	<section class="headerShop" style="background-image: url('<?php the_field('image'); ?>')">
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
 
