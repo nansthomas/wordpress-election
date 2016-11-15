@@ -1,4 +1,3 @@
-
         <footer class="footer">
         	<div class="footer__columns">
         		<h6 class="footer__titles">Donner</h6>

@@ -5,6 +5,8 @@
 // ACCORDING TO THE CAPABILITIES YOU CREATE
 
 add_action( 'init', 'creation_meetings' );
+add_action( 'init', 'creation_propositions' );
+add_action( 'init', 'creation_news' );
 
 function creation_meetings()
 {
@@ -54,8 +56,6 @@ function creation_meetings()
 
 }
 
-add_action( 'init', 'creation_propositions' );
-
 function creation_propositions()
 {
 
@@ -101,5 +101,53 @@ function creation_propositions()
     );
 
     register_post_type( 'proposition' , $args );
+
+}
+
+function creation_news()
+{
+
+  $labels = array(
+        'name'               => 'news',
+        'singular_name'      => 'new',
+        'all_items'          => 'Tous les news',
+        'add_new'            => 'Ajouter un new',
+        'add_new_item'       => 'Ajouter un nouvel new',
+        'edit_item'          => "Modifier le new",
+        'new_item'           => 'Nouveau new',
+        'view_item'          => "Voir le new",
+        'search_items'       => "Rechercher un new",
+        'not_found'          => 'Pas de résultat',
+        'not_found_in_trash' => 'Pas de résultat',
+        'parent_item_colon'  => 'new parent:',
+        'menu_name'          => 'news',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => false,
+        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments' ),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => -2,
+        'menu_icon'           => 'dashicons-cart',
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => false,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => array( 'slug' => 'new' ),
+        'capability_type' => 'new',
+        'capabilities' => array(
+            'publish_posts' => 'publish_news',
+            'edit_posts' => 'edit_news',
+            'edit_post' => 'edit_new',
+            'delete_post' => 'delete_new'
+        )
+    );
+
+    register_post_type( 'new' , $args );
 
 }
