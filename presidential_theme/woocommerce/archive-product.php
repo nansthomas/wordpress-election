@@ -20,8 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); 
-$image = get_field('image_boutique');
+get_header( 'shop' );
+$id = get_the_ID();
+$image = get_field('image_boutique', $id);
 var_dump($image);
 ?>
 	
