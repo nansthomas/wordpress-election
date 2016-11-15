@@ -28,8 +28,8 @@ if ( have_posts() ) {
 			echo "while have_post ok";
 			the_post();
 			var_dump(the_post());
-			$image = the_field('image_boutique', get_option('Boutique'));
-			var_dump($image);
+			$image_boutique = the_field('image_boutique', get_option('Boutique'));
+			var_dump($image_boutique);
 			if( !empty($image_boutique) ): ?>
 ?>
 	
