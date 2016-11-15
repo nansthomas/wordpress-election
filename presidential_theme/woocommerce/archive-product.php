@@ -29,7 +29,7 @@ if ( have_posts() ) {
 			var_dump($image);
 ?>
 	
-	<section class="headerShop" style= "background-image: url(<?php the_field('image'); ?>);">
+	<section class="headerShop" style= "background-image: url(<?php get_field('image_boutique'); ?>);">
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
 
