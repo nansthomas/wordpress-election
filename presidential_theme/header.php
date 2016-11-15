@@ -25,7 +25,7 @@
                     'menu_id' => 'menu_id' // id à attribuer au menu
                     // voir les autres arguments possibles sur le codex
                 );
-                /*wp_nav_menu($args);*/
+                wp_nav_menu($args);
                 ?>
             </div>
         </header>
