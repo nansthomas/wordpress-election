@@ -445,7 +445,7 @@ body {
   display: flex;
   list-style: none; }
   .header__nav ul li {
-    margin-right: 20px; }
+    margin-right: 40px; }
     .header__nav ul li a {
       text-decoration: none;
       color: #000;
@@ -631,7 +631,7 @@ body {
 .headerShop {
   height: 80vh;
   width: 85%;
-  margin: 60px auto 70px auto;
+  margin: 0px auto 70px auto;
   background-image: url("../../img/background-Shop.png");
   background-size: cover;
   background-position: center;
