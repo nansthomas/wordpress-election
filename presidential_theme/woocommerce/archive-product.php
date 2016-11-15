@@ -24,7 +24,7 @@ get_header( 'shop' );
 
 	if(is_archive(get_the_id())){
 		echo(get_the_ID());
-	    $mygallery = get_field('image_boutique');
+	    $mygallery = get_field('image_boutique', 4);
 	    var_dump($mygallery);
 	};
 ?>
