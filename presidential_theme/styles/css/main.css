@@ -434,7 +434,9 @@ body {
   font-style: normal; }
 
 .header {
-  position: fixed; }
+  z-index: 100;
+  position: fixed;
+  background: #FFF; }
 
 .header__nav ul {
   display: -webkit-box;
