@@ -23,8 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header( 'shop' );
 
 	if(is_archive(get_the_id())){
-	    $mygallery=get_field(get_the_id());
-	    echo 'ok';
+	    $mygallery=get_field('image_boutique',get_the_id());
+	    var_dump($mygallery);
 	};
 ?>
 	
