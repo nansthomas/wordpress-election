@@ -40,7 +40,6 @@ get_header(); ?>
 	<h3 class="newsletterForm__title"><?php the_field('newsletter-titre');?></h3>
 	
 	<div class="newsletterForm__fields">
-		<input type="text" placeholder="Prénom">
 		<input type="mail" placeholder="Email">
 
 		<input type="submit" value=<?php the_field('newsletter-bouton-texte');?>>
