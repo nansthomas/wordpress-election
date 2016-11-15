@@ -436,7 +436,8 @@ body {
 .header {
   z-index: 100;
   position: fixed;
-  background: #FFF; }
+  background: #FFF;
+  width: 100%; }
 
 .header__nav ul {
   display: -webkit-box;
