@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 	
-	<section class="headerShop" style="background-image: (url='<?php the_field('image');?>'">
+	<section class="headerShop" style="background-image: (url='<?php the_field('image')['url'];?>'">
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
 
