@@ -22,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); 
 $image = get_field('image');
+var_dump($image);
 ?>
 	
 	<section class="headerShop" style="background-image: url('<?php echo $image['url']; ?>')">
