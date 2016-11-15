@@ -6,7 +6,7 @@
 			the_post();
 			if(has_post_thumbnail())
 			{ ?>
-				<section class="largeHeader" style="background-image: url('<?php the_post_thumbnail("thumbnail_new_full"); ?> ')">;
+				<section class="largeHeader" style="background-image: url('<?php the_post_thumbnail("thumbnail_new_full"); ?>')">;
 			<?php } ?>
 
 <!-- set up the main image of the article in the attribute style -->
