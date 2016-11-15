@@ -800,21 +800,20 @@ body {
     font-weight: 500; }
 
 .donationFormMin {
-  width: 50%;
-  height: 250px;
+  width: 100%;
+  height: 100px;
   background: #202A51; }
 
 .donationFormMin__container {
-  width: 100%;
+  width: 50%;
   margin: auto;
   color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   @media (max-width: 1000px) {
     .donationFormMin__container {
       width: 60%; } }
@@ -825,7 +824,6 @@ body {
 .donationFormMin__title {
   height: 100%;
   margin: 40px 0;
-  text-align: center;
   font-size: 25px; }
   @media (max-width: 700px) {
     .donationFormMin__title {
@@ -833,8 +831,7 @@ body {
       padding-top: 4px; } }
 
 .donationFormMin__amounts {
-  width: 100%;
-  padding: 0;
+  width: 50%;
   list-style: none;
   margin: 40px 0;
   font-weight: 500;

@@ -1,15 +1,15 @@
 .donationFormMin {
-	width: 50%;
-	height: 250px;
+	width: 100%;
+	height: 100px;
 	background: #202A51;
 }
 
 .donationFormMin__container {
-	width: 100%;
+	width: 50%;
 	margin: auto;
 	color: #FFF;
 	display: flex;
-    flex-direction: column;
+	justify-content: space-between;
 
 	@include medium {
 		width: 60%;
@@ -23,7 +23,6 @@
 .donationFormMin__title {
 	height: 100%;
 	margin: 40px 0;
-	text-align: center;
 	font-size: 25px;
 
 	@include semiMedium {
@@ -33,8 +32,7 @@
 }
 
 .donationFormMin__amounts {
-	width: 100%;
-	padding: 0;
+	width: 50%;
 	list-style: none;
 	margin: 40px 0;
 	font-weight: 500;
