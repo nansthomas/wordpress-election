@@ -7,5 +7,5 @@ include_once ('includes/excerpt.php');
 include_once ('includes/sidebars.php');
 include_once ('includes/taxonomies.php');
 include_once ('includes/woocommerce.php');
-// include_once ('includes/custom_form.php');
+include_once ('includes/custom_form.php');
 include_once ('includes/scripts_styles.php');
