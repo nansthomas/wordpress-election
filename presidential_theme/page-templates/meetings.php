@@ -5,6 +5,9 @@
 
 	get_header(); ?>
 ?>
+
+<h1>Meetings</h1>
+
 <section class="templateBlog">
     
     <div class="templateBlog__container">
