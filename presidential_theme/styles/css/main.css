@@ -994,7 +994,7 @@ body {
       text-align: center; } }
   @media (max-width: 700px) {
     .socials__title {
-      display: none; } }
+      width: 70%; } }
 
 .widget.social-icons-widget {
   list-style: none; }
