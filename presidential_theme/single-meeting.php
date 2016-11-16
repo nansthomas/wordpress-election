@@ -29,14 +29,14 @@
 			</iframe>
 			<?php
 				acf_form(array(
+					'id' => 'acf-billets-form',
 					'post_id' => 'new_billet',
 					'new_post' => array(
 						'post_type' => 'billet',
 						'post_status' => 'pending'
 						),
 					'submit_value' => 'Réservez',
-					'post_title' => false,
-					'post_content' => false,
+					'fields' => array('nom', 'prenom', 'mail'),
 					'updated_message' => 'Merci, vous allez bientôt recevoir un mail de confirmation.',
 					));
 			?>		
