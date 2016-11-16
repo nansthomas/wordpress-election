@@ -7,6 +7,7 @@
 add_action( 'init', 'creation_meetings' );
 add_action( 'init', 'creation_propositions' );
 add_action( 'init', 'creation_news' );
+add_action( 'init', 'creation_billets' );
 
 function creation_meetings()
 {
@@ -149,5 +150,53 @@ function creation_news()
     );
 
     register_post_type( 'new' , $args );
+
+}
+
+function creation_billets()
+{
+
+  $labels = array(
+        'name'               => 'billets',
+        'singular_name'      => 'billet',
+        'all_items'          => 'Tous les billets',
+        'add_new'            => 'Ajouter un billet',
+        'add_new_item'       => 'Ajouter un nouvel billet',
+        'edit_item'          => "Modifier le billet",
+        'new_item'           => 'Nouveau billet',
+        'view_item'          => "Voir le billet",
+        'search_items'       => "Rechercher un billet",
+        'not_found'          => 'Pas de résultat',
+        'not_found_in_trash' => 'Pas de résultat',
+        'parent_item_colon'  => 'billet parent:',
+        'menu_name'          => 'billets',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => false,
+        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments' ),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => -2,
+        'menu_icon'           => 'dashicons-cart',
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => false,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => array( 'slug' => 'billet' ),
+        'capability_type' => 'billet',
+        'capabilities' => array(
+            'publish_posts' => 'publish_billets',
+            'edit_posts' => 'edit_billets',
+            'edit_post' => 'edit_billet',
+            'delete_post' => 'delete_billet'
+        )
+    );
+
+    register_post_type( 'billet' , $args );
 
 }
