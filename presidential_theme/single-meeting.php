@@ -24,7 +24,7 @@
 			<section class="reservation">
 				<h2>Réservez votre place</h2>
 			<iframe class="map" height="400"
-			frameborder="0" border:0"
+			frameborder="0"
 			src="https://www.google.com/maps/embed/v1/search?q=<?php echo get_field('adresse').' '.get_field('ville'); ?>&key=AIzaSyATj2xDYI8V_JZtWs0irnKq4GmorB84F_0" allowfullscreen>
 			</iframe>
 			<?php
