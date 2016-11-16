@@ -93,7 +93,6 @@ if( have_rows('flexible_bottom') )
     {
     	the_row();
     	$layout = get_row_layout();
-    	echo $layout;	
     	include get_template_directory() . '/views/flexible-parts/'. $layout . '.php';
     }
 }
