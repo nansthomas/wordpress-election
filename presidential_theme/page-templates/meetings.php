@@ -33,9 +33,6 @@
 				}
 			?>
 			<h5 class="templateBlog__articleTitle"> <a href=" <?php the_permalink(); ?> "><?php the_title(); ?></a></h5>
-			<div class="templateBlog__articleDescription">
-				<?php echo get_excerpt(); ?>
-			</div>
 		</article>
 		<?php 
 			}
