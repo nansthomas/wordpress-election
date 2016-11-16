@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' );
 
-	if(is_archive(get_the_id())){
+if(is_archive(get_the_id())){
 	    $image_boutique = get_field('image_boutique', 4);
 ?>
 	
