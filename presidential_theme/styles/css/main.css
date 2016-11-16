@@ -820,7 +820,8 @@ body {
   color: #676767; }
   .templateBlog__articleTitle a {
     text-decoration: none;
-    color: #676767; }
+    color: #676767;
+    margin-bottom: 10px; }
   .templateBlog__articleTitle:after {
     position: absolute;
     display: block;
