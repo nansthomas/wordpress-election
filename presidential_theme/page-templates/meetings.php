@@ -6,7 +6,7 @@
 	get_header(); ?>
 ?>
 
-<h1>Meetings</h1>
+<h1>Meetings à venir</h1>
 
 <section class="templateBlog">
     
@@ -32,7 +32,7 @@
 					echo '</div>';
 				}
 			?>
-			<h5 class="templateBlog__articleTitle"><?php the_title(); ?></h5>
+			<h5 class="templateBlog__articleTitle"> <a href=" <?php the_permalink(); ?> "></a> <?php the_title(); ?></h5>
 			<div class="templateBlog__articleDescription">
 				<?php echo get_excerpt(); ?>
 			</div>
