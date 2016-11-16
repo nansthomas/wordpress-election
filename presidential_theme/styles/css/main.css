@@ -933,18 +933,28 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .donationFormMin__amounts li form button {
+    background: none; }
+    .donationFormMin__amounts li form button span {
+      min-height: 30px;
+      display: inline-block;
+      background: #0785F2;
+      border-radius: 5%;
+      text-align: center;
+      padding: 0px 15px;
+      cursor: pointer; }
   @media (max-width: 700px) {
     .donationFormMin__amounts {
       width: 60%; } }
 
-.donationFormMin__amount {
-  display: inline-block;
-  background: #0785F2;
-  border-radius: 5%;
-  text-align: center;
-  padding: 6px 10px;
-  cursor: pointer; }
-
+/* .donationFormMin__amount {
+	display: inline-block;
+	background: #0785F2;
+	border-radius: 5%;
+	text-align: center;
+	padding: 6px 10px;
+	cursor: pointer;
+} */
 .donationFormMax {
   width: 50%;
   margin: 10px auto 40px auto; }
