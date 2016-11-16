@@ -4,23 +4,23 @@ add_action('acf/save_post', 'my_save_post');
 function my_save_post( $post_id ) {
 	
 	// bail early if not a contact_form post
-	if( get_post_type($post_id) !== 'billet' ) {
+	// if( get_post_type($post_id) !== 'billet' ) {
 		
-		return;
+	// 	return;
 		
-	}
+	// }
 	
 	
-	// bail early if editing in admin
-	if( is_admin() ) {
+	// // bail early if editing in admin
+	// if( is_admin() ) {
 		
-		return;
+	// 	return;
 		
-	}
+	// }
 	
 	
 	// vars
-	$post = get_post( $post_id );
+	// $post = get_post( $post_id );
 	
 	
 	// get custom fields (field group exists for content_form)
