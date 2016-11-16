@@ -30,7 +30,6 @@
 			src="https://www.google.com/maps/embed/v1/search?q=<?php echo get_field('adresse').' '.get_field('ville'); ?>&key=AIzaSyATj2xDYI8V_JZtWs0irnKq4GmorB84F_0" allowfullscreen>
 			</iframe>
 			<?php
-			echo get_the_ID();
 			acf_form(array(
 				'post_id'		=> 'new_post',
 				'post_title'	=> false,
