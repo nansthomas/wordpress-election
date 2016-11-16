@@ -24,12 +24,9 @@ get_header( 'shop' );
 
 	if(is_archive(get_the_id())){
 	    $image_boutique = get_field('image_boutique', 4);
-	    var_dump($image_boutique);
-
 ?>
 	
 	<section class="headerShop" style= "background-image: url('<?php echo $image_boutique; ?>');">
-		<?php echo $image_boutique; ?>
 		<h1 class="headerShop__title">Boutique homme invisible</h1>
 	</section>
 	<?php
