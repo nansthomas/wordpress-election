@@ -465,9 +465,10 @@ body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #FFFFFF a;
-    color-text-decoration: none;
-    color-color: inherit; }
+  color: #FFFFFF; }
+  .footer a {
+    text-decoration: none;
+    color: inherit; }
   @media (max-width: 1000px) {
     .footer {
       padding-left: 50px;
