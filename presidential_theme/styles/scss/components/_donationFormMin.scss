@@ -2,6 +2,10 @@
 	width: 100%;
 	height: 100px;
 	background: #202A51;
+
+	@include medium {
+		height: auto;
+	}
 }
 
 .donationFormMin__container {
@@ -13,6 +17,7 @@
 
 	@include medium {
 		width: 60%;
+		flex-direction: column;
 	}
 
 	@include semiMedium {
@@ -24,6 +29,10 @@
 	height: 100%;
 	margin: 40px 0;
 	font-size: 25px;
+
+	@include medium {
+		text-align: center
+	}
 
 	@include semiMedium {
 		font-size: 16px;
@@ -39,6 +48,12 @@
 	font-size: 19px;
 	display: flex;
 	justify-content: space-between;
+
+	@include medium{
+		width: 100%;
+    	padding: 0;
+    	flex-wrap: wrap;
+	}
 
 	li form button {
 		background: none;
@@ -59,6 +74,12 @@
 			padding: 5px 10px;
     		width: 120px;
     		margin: 0 10px 0 40px;
+
+    		@include semiMedium {
+			    margin: 0 10px 0 0px;
+			    width: 100%;
+    			text-align: center;
+			}
 		}
 
 		&:before {
