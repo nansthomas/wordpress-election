@@ -2,7 +2,6 @@
 add_action('acf/save_post', 'my_save_post');
 
 function my_save_post( $post_id ) {
-	die($post_id);
 	// bail early if not a contact_form post
 	// if( get_post_type($post_id) !== 'billet' ) {
 		
