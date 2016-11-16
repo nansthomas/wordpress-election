@@ -54,6 +54,20 @@
 		}
 	}
 
+	form button {
+		background: none;
+
+		span {
+			min-height: 30px;
+		    display: inline-block;
+		    background: #0785F2;
+		    border-radius: 5%;
+		    text-align: center;
+		    padding: 0px 15px;
+		    cursor: pointer;
+		}
+	}
+
 	@include semiMedium {
 		width: 60%;
 	}
