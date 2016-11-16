@@ -1,0 +1,79 @@
+.woocommerce {
+
+	div.product {
+
+		div.images {
+			@include medium {
+				width: 100%;
+			}
+		}
+
+		.product_title.entry-title {
+			margin-top: 25%;
+			text-transform: uppercase;
+			font-size: 30px;
+
+			@include medium {
+				margin-top: 5%;
+			}
+		}
+
+		p.price.override {
+			color: #2067C6;
+			text-transform: uppercase;
+		}	
+
+		form.cart { 
+
+			div.quantity{
+				margin-top: 20px;
+				float:none;
+			}
+
+			.button {
+				margin-top: 30px;
+				display: block;
+				padding: 15px 10px;
+				font-family: Gotham;
+				width: auto;
+				border: none;
+		    	background: #0785F2;
+		    	color: #FFF;
+		    	font-size: 15px;
+		    	cursor: pointer;
+		    	height: 51.5px;
+		   		vertical-align: top;
+		   		border-radius: 4px;
+			}
+		}
+
+		div.summary {
+			width: 45%;
+
+			@include medium {
+				width: 70%;
+    			margin: 0 90px;
+			}
+		}
+	}	
+}
+
+.summary.entry-summary {
+
+	.product-description {
+		color: #676767;
+		font-size: 14px;
+		word-wrap: break-word;
+		width: 80%;
+
+		@include medium {
+			width: 90%;
+		}
+	}
+}
+
+.woocommerce-message {
+	top: 20px;
+    height: 20px;
+    display: none;
+}
