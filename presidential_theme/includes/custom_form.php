@@ -24,14 +24,16 @@ function my_save_post( $post_id ) {
 	
 	
 	// get custom fields (field group exists for content_form)
-	$nom = get_field('nom', $post_id);
-	$prenom = get_field('prenom', $post_id);
-	$mail = get_field('mail', $post_id);
+	// $nom = get_field('nom', $post_id);
+	$nom = 'allo';
+	// $prenom = get_field('prenom', $post_id);
+	$prenom = 'aorfj';
+	// $mail = get_field('mail', $post_id);
 	$content = 'Hello';
 	
 	// email data
 	$to = 'arnaud.villani@gmail.com';
-	$headers = 'From: aoezifu <' . 'clement.vion@hetic.net' . '>' . "\r\n";
+	$headers = 'From: aoezifu <clement.vion@hetic.net>' . "\r\n";
 	$subject = 'ooooo';
 	$body = $content;
 	
