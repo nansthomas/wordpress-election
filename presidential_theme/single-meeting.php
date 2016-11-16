@@ -34,9 +34,9 @@
 						'post_type' => 'billet',
 						'post_status' => 'pending'
 						),
-					'submit_value' => 'Réservez votre billet',
-					'post_title' => true,
-					'post_content' => true,
+					'submit_value' => 'Réservez',
+					'post_title' => false,
+					'post_content' => false,
 					'updated_message' => 'Merci, vous allez bientôt recevoir un mail de confirmation.',
 					));
 			?>		
