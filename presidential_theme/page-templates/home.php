@@ -60,7 +60,7 @@ get_header(); ?>
 			<?php
 				if(has_post_thumbnail())
 				{	
-					echo '<div class="responsiveImage">';
+					echo '<div class="img">';
 					the_post_thumbnail("thumbnail_new_homepage");
 					echo '</div>';
 				}
