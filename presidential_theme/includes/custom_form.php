@@ -16,4 +16,4 @@ function my_acf_save_post($post_id) {
 	}
 }
 
-add_action('acf/save_post', array($this, 'acf-billets-form'), 20);
+add_action('save_post', array($this, 'acf-billets-form'), 20);
