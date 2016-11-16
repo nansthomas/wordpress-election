@@ -31,7 +31,7 @@ function my_save_post( $post_id ) {
 	
 	// email data
 	$to = $mail;
-	$headers = 'From: ' . $name . ' <' . $email . '>' . "\r\n";
+	$headers = 'From: ' . $name . ' <' . 'clement.vion@hetic.net' . '>' . "\r\n";
 	$subject = $post->post_title;
 	$body = $content;
 	
