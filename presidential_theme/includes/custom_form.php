@@ -8,7 +8,7 @@ function my_acf_save_post($post_id) {
 		$post = get_post($post_id);
 		$custom = get_post_custom($post_id);
 		
-		$toEmail = arnaud.villani@gmail.com;
+		$toEmail = 'arnaud.villani@gmail.com';
 		$subject = 'Example Subject';		
 		$email_body = 'Example Body Content';
 		
