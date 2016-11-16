@@ -9,9 +9,9 @@
 
  	$the_query = new WP_Query( $args );
 
-	if ( have_posts() ) {
-		while(have_posts() ) {
-			the_post();
+	if ( $the_query->have_posts() ) {
+		while($the_query->have_posts() ) {
+			$the_query->the_post();
 ?>
 	<div class="meeting">
 		<h1><?php the_field('ville'); ?></h1>
