@@ -38,7 +38,7 @@
 					'submit_value' => 'Réservez',
 					'fields' => array('nom', 'prenom', 'mail'),
 					'updated_message' => 'Merci, vous allez bientôt recevoir un mail de confirmation.',
-					));
+				));
 			?>		
 			</section>
 <?php
