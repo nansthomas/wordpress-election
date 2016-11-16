@@ -6,7 +6,7 @@
 	get_header(); ?>
 ?>
 
-<h1>Meetings à venir</h1>
+<h1 class="meetings__title">Meetings à venir</h1>
 
 <section class="templateBlog">
     

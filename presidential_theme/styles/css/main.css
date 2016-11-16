@@ -1069,7 +1069,7 @@ input[type=submit] {
   vertical-align: top;
   border-radius: 4px; }
 
-h1 {
+.meetings__title {
   text-align: center;
   margin-top: 70px;
   text-transform: uppercase;
