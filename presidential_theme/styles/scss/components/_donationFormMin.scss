@@ -49,8 +49,12 @@
 	display: flex;
 	justify-content: space-between;
 
+	@include medium{
+    	padding: 0;
+    	width: 100%;
+	}
+
 	@include small{
-		width: 100%;
     	padding: 0;
     	flex-wrap: wrap;
 	}
@@ -80,7 +84,7 @@
 		@include small {
 			width: 90%;
 		}
-		
+
 		input {
 			padding: 5px 10px;
     		width: 120px;
