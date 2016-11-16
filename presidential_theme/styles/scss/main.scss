@@ -23,7 +23,6 @@
   'layout/header',
   'layout/footer',
   // Home page
-  'layout/homeBlog',
   'layout/homeProgram',
   // Donations page
   'layout/donationHeader',
@@ -35,6 +34,7 @@
   'layout/shopProduct',
   // Independents 
   'layout/largeHeader',
+  'layout/templateBlog',
   'layout/newsletterForm';
 
 // 5. Components
@@ -48,5 +48,6 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/meetings';
 

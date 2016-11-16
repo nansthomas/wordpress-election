@@ -47,16 +47,16 @@ get_header(); ?>
 
 </form>
 
-<section class="homeBlog">
+<section class="templateBlog">
     
-    <div class="homeBlog__container">
+    <div class="templateBlog__container">
 		<?php 
 		if($the_query->have_posts()) {
 			while ($the_query->have_posts() )
 			{
 				$the_query->the_post();
 		?>
-		<article class="homeBlog__article">
+		<article class="templateBlog__article">
 			<?php
 				if(has_post_thumbnail())
 				{	
@@ -65,8 +65,8 @@ get_header(); ?>
 					echo '</div>';
 				}
 			?>
-			<h5 class="homeBlog__articleTitle"><?php the_title(); ?></h5>
-			<div class="homeBlog__articleDescription">
+			<h5 class="templateBlog__articleTitle"><?php the_title(); ?></h5>
+			<div class="templateBlog__articleDescription">
 				<?php echo get_excerpt(); ?>
 			</div>
 		</article>
