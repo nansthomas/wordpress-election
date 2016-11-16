@@ -52,6 +52,7 @@
 	@include medium{
 		width: 100%;
     	padding: 0;
+    	flex-wrap: wrap;
 	}
 
 	li form button {
