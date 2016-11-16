@@ -76,6 +76,11 @@
 	}
 
 	li.custom {
+
+		@include small {
+			width: 90%;
+		}
+		
 		input {
 			padding: 5px 10px;
     		width: 120px;

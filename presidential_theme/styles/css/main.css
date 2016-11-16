@@ -972,6 +972,9 @@ body {
       text-align: center;
       padding: 0px 15px;
       cursor: pointer; }
+  @media (max-width: 600px) {
+    .donationFormMin__amounts li.custom {
+      width: 90%; } }
   .donationFormMin__amounts li.custom input {
     padding: 5px 10px;
     width: 120px;
