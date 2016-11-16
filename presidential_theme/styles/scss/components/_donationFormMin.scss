@@ -60,8 +60,8 @@
 	}
 
 	li {
-		@include medium{
-			margin: 10px;
+		@include small{
+			margin: 20px 10px;
 		}
 	}
 
