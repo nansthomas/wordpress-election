@@ -20,7 +20,10 @@
 					<h4><?php the_field('adresse'); ?></h4>
 					<h5><?php the_field('heure'); ?></h5>
 				</div>
-
+<?php
+		}
+	}
+?>
 
 			</section>
 			<section class="reservation">
@@ -43,8 +46,4 @@
 
 			?>	
 			</section>
-<?php
-		}
-	}
-?>
 <?php get_footer(); ?>

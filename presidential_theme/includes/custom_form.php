@@ -1,12 +1,42 @@
 <?php
-add_filter('acf/save_post' , 'new_user_acf', 10, 1 ); // On enregistre le nouveau membre
+add_action('acf/save_post', 'my_save_post');
 
-function new_user_acf(){
-
-	// Pour ma part j’envoi un e-mail de bienvenue que je récupère ci-dessous
-	$content = 'zzzzzzzzz';
-	$headers = 'From: Monsite' . \r\n;
-	$headers .= 'MIME-Version: 1.0' . \r\n;
-	$headers .= 'Content-Type: text/html; charset=uft-8'. \r\n;
-	wp_mail('arnaud.villani@gmail.com', 'Bienvenue sur Mon site', 'orfidooi', $headers);
+function my_save_post( $post_id ) {
+	
+	// bail early if not a contact_form post
+	// if( get_post_type($post_id) !== 'billet' ) {
+		
+	// 	return;
+		
+	// }
+	
+	
+	// // bail early if editing in admin
+	// if( is_admin() ) {
+		
+	// 	return;
+		
+	// }
+	
+	
+	// vars
+	// $post = get_post( $post_id );
+	
+	
+	// get custom fields (field group exists for content_form)
+	// $nom = get_field('nom', $post_id);
+	// $prenom = get_field('prenom', $post_id);
+	// $mail = get_field('mail', $post_id);
+	$content = 'Hello';
+	
+	// email data
+	$to = 'arnaud.villani@gmail.com';
+	$headers = 'From: aoezifu <clement.vion@hetic.net>' . "\r\n";
+	$subject = 'ooooo';
+	$body = $content;
+	
+	
+	// send email
+	wp_mail($to, $subject, $body, $headers );
+	
 }
