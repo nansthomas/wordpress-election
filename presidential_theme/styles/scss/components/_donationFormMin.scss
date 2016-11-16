@@ -49,7 +49,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	@include medium{
+	@include small{
 		width: 100%;
     	padding: 0;
     	flex-wrap: wrap;
@@ -100,22 +100,29 @@
 		}		
 	}
 
-	form button {
-		background: none;
-
-		@include medium{
+	form {
+		@include small{
 			width: 100%;
 		}
 
-		span {
-			min-height: 30px;
-		    display: inline-block;
-		    background: #0785F2;
-		    border-radius: 5%;
-		    text-align: center;
-		    padding: 0px 15px;
-		    cursor: pointer;
+		button {
+			background: none;
+
+			@include small{
+				width: 100%;
+			}
+
+			span {
+				min-height: 30px;
+			    display: inline-block;
+			    background: #0785F2;
+			    border-radius: 5%;
+			    text-align: center;
+			    padding: 0px 15px;
+			    cursor: pointer;
+			}
 		}
+
 	}
 }
 
