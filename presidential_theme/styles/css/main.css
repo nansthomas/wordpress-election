@@ -967,19 +967,40 @@ body {
   height: 210px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1000px) {
+    .socials {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      height: auto; } }
 
 .socials__title {
   font-size: 24px;
   color: #FFFFFF;
   width: 30%;
-  margin: 70px 140px; }
+  margin: 180px; }
   @media (max-width: 1000px) {
     .socials__title {
-      margin: 70px 80px; } }
+      margin: 70px 80px;
+      text-align: center; } }
   @media (max-width: 700px) {
     .socials__title {
       display: none; } }
+
+.widget.social-icons-widget {
+  list-style: none; }
+  .widget.social-icons-widget ul {
+    list-style: none;
+    padding: 0; }
 
 .tweets {
   width: 60%;
