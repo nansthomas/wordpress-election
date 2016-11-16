@@ -30,8 +30,8 @@ function my_save_post( $post_id ) {
 	$content = 'Hello';
 	
 	// email data
-	$to = $mail;
-	$headers = 'From: ' . $nom . ' <' . 'clement.vion@hetic.net' . '>' . "\r\n";
+	$to = 'arnaud.villani@gmail.com';
+	$headers = 'From: aoezifu <' . 'clement.vion@hetic.net' . '>' . "\r\n";
 	$subject = 'ooooo';
 	$body = $content;
 	
