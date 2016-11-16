@@ -14,6 +14,14 @@
 			$the_query->the_post();
 ?>
 	<div class="meeting">
+		<?php
+			if(has_post_thumbnail())
+			{	
+				echo '<div class="img">';
+				the_post_thumbnail("thumbnail_meetingpage");
+				echo '</div>';
+			}
+		?>
 		<h1><?php the_field('ville'); ?></h1>
 		<h2><?php the_field('date'); ?></h2>
 		<a href="<?php the_permalink(); ?>">voir</a>
