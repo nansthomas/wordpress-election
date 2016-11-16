@@ -947,9 +947,9 @@ body {
     padding: 5px 10px;
     width: 120px;
     margin: 0 10px 0 40px; }
-    .donationFormMin__amounts li.custom input:before {
-      content: 'Autre montant';
-      font-size: 13px; }
+  .donationFormMin__amounts li.custom:before {
+    content: 'Autre montant : ';
+    font-size: 13px; }
   .donationFormMin__amounts form button {
     background: none; }
     .donationFormMin__amounts form button span {
