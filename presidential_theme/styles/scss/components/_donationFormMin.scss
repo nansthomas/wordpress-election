@@ -2,6 +2,10 @@
 	width: 100%;
 	height: 100px;
 	background: #202A51;
+
+	@include medium {
+		height: auto;
+	}
 }
 
 .donationFormMin__container {
@@ -13,6 +17,7 @@
 
 	@include medium {
 		width: 60%;
+		flex-direction: column;
 	}
 
 	@include semiMedium {
@@ -24,6 +29,10 @@
 	height: 100%;
 	margin: 40px 0;
 	font-size: 25px;
+
+	@include medium {
+		text-align: center
+	}
 
 	@include semiMedium {
 		font-size: 16px;
