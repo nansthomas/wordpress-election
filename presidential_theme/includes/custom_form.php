@@ -1,19 +1,42 @@
 <?php
-function my_acf_save_post($post_id) {
-	
-	if( !isset($_POST['acf']) )
-		return;
-	
-	if(get_post_type($post_id) == 'my_custom_post_type') {
-		$post = get_post($post_id);
-		$custom = get_post_custom($post_id);
-		
-		$toEmail = 'arnaud.villani@gmail.com';
-		$subject = 'Example Subject';		
-		$email_body = 'Example Body Content';
-		
-		$was_email_sent = wp_mail($toEmail, $subject, $email_body);
-	}
-}
+add_action('acf/save_post', 'my_save_post');
 
-add_action('save_post', array($this, 'acf-billets-form'), 20);
+function my_save_post( $post_id ) {
+	
+	// bail early if not a contact_form post
+	if( get_post_type($post_id) !== 'contact_form' ) {
+		
+		return;
+		
+	}
+	
+	
+	// bail early if editing in admin
+	if( is_admin() ) {
+		
+		return;
+		
+	}
+	
+	
+	// vars
+	$post = get_post( $post_id );
+	
+	
+	// get custom fields (field group exists for content_form)
+	$nom = get_field('nom', $post_id);
+	$prenom = get_field('prenom', $post_id);
+	$mail = get_field('mail', $post_id);
+	$content = 'Hello';
+	
+	// email data
+	$to = $mail;
+	$headers = 'From: ' . $name . ' <' . $email . '>' . "\r\n";
+	$subject = $post->post_title;
+	$body = $content;
+	
+	
+	// send email
+	wp_mail($to, $subject, $body, $headers );
+	
+}

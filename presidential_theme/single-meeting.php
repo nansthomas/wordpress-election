@@ -31,12 +31,11 @@
 			</iframe>
 			<?php
 				acf_form(array(
-					'id' => 'acf-billets-form',
 					'post_id' => 'new_post',
 					'new_post' => array(
 						'post_type' => 'billet',
 						'post_status' => 'pending'
-						),
+					),
 					'submit_value' => 'Réservez',
 					'fields' => array('nom', 'prenom', 'mail'),
 					'updated_message' => 'Merci, vous allez bientôt recevoir un mail de confirmation.',
