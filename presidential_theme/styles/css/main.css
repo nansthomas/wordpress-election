@@ -962,7 +962,7 @@ body {
       padding: 0;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
-  @media (max-width: 1000px) {
+  @media (max-width: 600px) {
     .donationFormMin__amounts li {
       margin: 20px 10px; } }
   .donationFormMin__amounts li form button {
