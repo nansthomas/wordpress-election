@@ -953,16 +953,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     .donationFormMin__amounts {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      width: 80%;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+      width: 100%;
+      padding: 0; } }
   .donationFormMin__amounts li form button {
     background: none; }
     .donationFormMin__amounts li form button span {
@@ -979,7 +973,9 @@ body {
     margin: 0 10px 0 40px; }
     @media (max-width: 700px) {
       .donationFormMin__amounts li.custom input {
-        margin: 0 10px 0 0px; } }
+        margin: 0 10px 0 0px;
+        width: 100%;
+        text-align: center; } }
   .donationFormMin__amounts li.custom:before {
     content: '';
     background: rgba(255, 255, 255, 0);
