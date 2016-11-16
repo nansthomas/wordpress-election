@@ -477,7 +477,7 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .footer {
       padding-left: 20px;
       height: auto;
@@ -510,14 +510,14 @@ body {
   @media (max-width: 700px) {
     .footer__column {
       width: 100px; } }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .footer__column {
       width: 200px; } }
 
 .footer__titles {
   font-size: 15px;
   margin-bottom: 20px; }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .footer__titles {
       font-size: 23px; } }
 
@@ -529,7 +529,7 @@ body {
   .footer__links a {
     text-decoration: none;
     color: #FFFFFF; }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .footer__links {
       font-size: 14px; } }
 
@@ -550,7 +550,7 @@ body {
   @media (max-width: 1000px) {
     .homeBlog__container {
       max-width: 665px; } }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .homeBlog__container {
       max-width: 310px; } }
 
@@ -602,7 +602,7 @@ body {
   @media (max-width: 700px) {
     .homeProgram__infos {
       width: 100%; } }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .homeProgram__infos {
       padding: 60px 30px; } }
 
@@ -706,7 +706,7 @@ body {
   @media (max-width: 700px) {
     .shopProducts {
       max-width: 630px; } }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .shopProducts {
       max-width: 300px; } }
   .shopProducts li {
@@ -806,7 +806,7 @@ body {
     .largeHeader__content {
       width: 100%;
       margin-left: 5%; } }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .largeHeader__content {
       margin-left: 2%; } }
 
@@ -814,7 +814,7 @@ body {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 500; }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .largeHeader__title {
       font-size: 35px; } }
 
@@ -822,7 +822,7 @@ body {
   font-size: 20px;
   font-weight: 300;
   opacity: 0.7; }
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .largeHeader__subtitle {
       font-size: 17px; } }
 
