@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> >
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
-
+        <meta name="viewport" content"initial-scale=1">
         <!-- Appel du fichier style.css de notre thème -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
