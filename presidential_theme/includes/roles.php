@@ -18,10 +18,16 @@ function admin_role() {
     $role->add_cap('edit_propositions');
     $role->add_cap('publish_propositions');    
 
-    // PROPOSITIONS ROLES
+    // NEWS ROLES
     $role->add_cap('delete_new');
     $role->add_cap('edit_new');
     $role->add_cap('edit_news');
     $role->add_cap('publish_news');
+
+    // BILLETS ROLES
+    $role->add_cap('delete_billet');
+    $role->add_cap('edit_billet');
+    $role->add_cap('edit_billets');
+    $role->add_cap('publish_billets');
 
 }
