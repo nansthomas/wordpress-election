@@ -4,7 +4,7 @@ add_action('acf/save_post', 'my_save_post');
 function my_save_post( $post_id ) {
 	
 	// bail early if not a contact_form post
-	if( get_post_type($post_id) !== 'contact_form' ) {
+	if( get_post_type($post_id) !== 'billet' ) {
 		
 		return;
 		
@@ -31,8 +31,8 @@ function my_save_post( $post_id ) {
 	
 	// email data
 	$to = $mail;
-	$headers = 'From: ' . $name . ' <' . 'clement.vion@hetic.net' . '>' . "\r\n";
-	$subject = $post->post_title;
+	$headers = 'From: ' . $nom . ' <' . 'clement.vion@hetic.net' . '>' . "\r\n";
+	$subject = 'ooooo';
 	$body = $content;
 	
 	
