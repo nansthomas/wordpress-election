@@ -30,17 +30,19 @@
 			src="https://www.google.com/maps/embed/v1/search?q=<?php echo get_field('adresse').' '.get_field('ville'); ?>&key=AIzaSyATj2xDYI8V_JZtWs0irnKq4GmorB84F_0" allowfullscreen>
 			</iframe>
 			<?php
-				acf_form(array(
-					'post_id' => 'new_post',
-					'new_post' => array(
-						'post_type' => 'billet',
-						'post_status' => 'pending'
-					),
-					'submit_value' => 'Réservez',
-					// 'fields' => array('nom', 'prenom', 'mail'),
-					'updated_message' => 'Merci, vous allez bientôt recevoir un mail de confirmation.',
-				));
-			?>		
+
+			acf_form(array(
+				'post_id'		=> 'new_post',
+				'post_title'	=> true,
+				'post_content'	=> true,
+				'new_post'		=> array(
+					'post_type'		=> 'billet',
+					'post_status'	=> 'publish'
+				),
+				'submit_value'	=> 'Send'
+			));
+
+			?>	
 			</section>
 <?php
 		}
