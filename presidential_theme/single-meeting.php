@@ -20,6 +20,13 @@
 
 
 			</section>
+			<section class="reservation">
+				<h2>Réservez votre place</h2>
+					<iframe class="column large-8" height="400"
+			frameborder="0" border:0"
+			src="https://www.google.com/maps/embed/v1/search?q=<?php echo get_field('adresse').' '.get_field('ville'); ?>&key=AIzaSyCyyuOw5JoEX3cWOAXQesi9PyMXjT3QoI0" allowfullscreen>
+			</iframe>
+			</section>
 <?php
 		}
 	}
