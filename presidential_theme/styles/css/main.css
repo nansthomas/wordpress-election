@@ -977,10 +977,10 @@ body {
           align-items: center; }
   @media (max-width: 1000px) {
     .socials {
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+          -ms-flex-direction: column;
+              flex-direction: column;
       height: auto; } }
 
 .socials__title {
