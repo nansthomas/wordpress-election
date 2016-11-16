@@ -984,6 +984,9 @@ body {
 .tweets {
   width: 60%;
   margin: auto; }
+  @media (max-width: 1000px) {
+    .tweets {
+      width: 80%; } }
   .tweets li {
     list-style: none; }
 
