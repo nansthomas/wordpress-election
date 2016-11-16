@@ -55,6 +55,12 @@
     	flex-wrap: wrap;
 	}
 
+	li {
+		@include medium{
+			margin: 10px;
+		}
+	}
+
 	li form button {
 		background: none;
 
@@ -97,6 +103,10 @@
 	form button {
 		background: none;
 
+		@include medium{
+			width: 100%;
+		}
+
 		span {
 			min-height: 30px;
 		    display: inline-block;
@@ -106,10 +116,6 @@
 		    padding: 0px 15px;
 		    cursor: pointer;
 		}
-	}
-
-	@include semiMedium {
-		width: 60%;
 	}
 }
 
