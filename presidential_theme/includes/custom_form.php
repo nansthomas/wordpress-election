@@ -24,11 +24,9 @@ function my_save_post( $post_id ) {
 	
 	
 	// get custom fields (field group exists for content_form)
-	// $nom = get_field('nom', $post_id);
-	$nom = 'allo';
-	// $prenom = get_field('prenom', $post_id);
-	$prenom = 'aorfj';
-	// $mail = get_field('mail', $post_id);
+	$nom = get_field('nom', 116);
+	$prenom = get_field('prenom', 116);
+	$mail = get_field('mail', 116);
 	$content = 'Hello';
 	
 	// email data
