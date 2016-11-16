@@ -1,5 +1,7 @@
 
-<?php get_header(); 
+<?php
+ acf_form_head();
+ get_header(); 
 
 	if ( have_posts() ) {
 		while(have_posts() ) {
