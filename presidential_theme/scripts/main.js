@@ -6,6 +6,9 @@ jQuery(document).ready(function($)
 {
 	$('.propositions__choice').on('click', '.proposition', function(e){
 		e.preventDefault();
+		$('.propositionsList__items').animate({opacity:0},500, function(){
+			$('.propositionsList__items').empty();
+		});
 		var loadProp = $(this).attr('domaine');
 		// $('.load-more').remove();
 		jQuery.post(
@@ -16,9 +19,8 @@ jQuery(document).ready(function($)
 			},
 			function(response)
 			{
-				console.log(response);
-				$('.propositionsList__items').empty();
 				$('.propositionsList__items').append(response);
+				$('.propositionsList__items').animate({opacity: 1},500);
 			}
 		);
 	});
