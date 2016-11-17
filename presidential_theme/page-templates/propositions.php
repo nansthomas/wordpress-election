@@ -36,7 +36,7 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 				echo "<li class='propositionsList__item'>";
 
 				// Get the taxonomy for the post
-				echo '<span class="propositionsList__itemTaxo">';
+				echo '<span class="propositionsList__itemTaxo" >';
 				the_terms( get_the_ID(), 'categorie-proposition');
 				echo '</span>';
 
