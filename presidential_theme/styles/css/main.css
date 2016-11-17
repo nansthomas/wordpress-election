@@ -681,7 +681,6 @@ body {
     background: #0785f2;
     padding: 1px;
     width: 100%;
-    display: block;
     margin: 5px auto 0 auto;
     -webkit-transform: scale(0);
             transform: scale(0);
