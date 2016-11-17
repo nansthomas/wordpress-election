@@ -13,12 +13,20 @@
     justify-content: space-around;
     padding: 0;
     cursor: pointer;
+
+    @include semiMedium {
+    	flex-direction: column;
+    }
 }
 
 .proposition {
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #2067c6;
+
+	@include semiMedium {
+    	margin: 5px 0;
+    }
 }
 
 .propositionsList {
