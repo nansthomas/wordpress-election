@@ -10,13 +10,25 @@
     }
 }
 
+.proposition__text {
+    width: 50%;
+    margin: auto;
+    font-size: 22px;
+    text-align: center;
+
+    @include semiMedium {
+        width: 80%;
+    }
+}
+
 .propositions__choice {
 	width: 80%;
-    margin: 60px auto 70px auto;
+    margin: 0px auto 70px auto;
+    padding: 30px;
+    background-color: aliceblue;
     list-style: none;
-    display: flex;
     justify-content: space-around;
-    padding: 0;
+    display: flex;
     cursor: pointer;
 
     @include semiMedium {

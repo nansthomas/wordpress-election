@@ -1,7 +1,13 @@
+.reservation__title {
+	width: 80%;
+    margin: 40px auto;
+}
+
 .reservation {
 	display: flex;
     width: 80%;
-    margin: auto;
+    margin: 40px auto;
+    height: 500px;
 
     form {
     	width: 90%;
