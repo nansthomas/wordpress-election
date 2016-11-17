@@ -6,7 +6,8 @@ jQuery(document).ready(function($)
 {
 	$('.propositions__choice').on('click', '.proposition', function(e){
 		e.preventDefault();
-		$('.propositionsList__items').animate({opacity:0},500, function(){
+		var height = $('.propositionsList__items').css('height');
+		$('.propositionsList__items').animate({opacity:0, height: height},500, function(){
 			$('.propositionsList__items').empty();
 		});
 		var loadProp = $(this).attr('domaine');
