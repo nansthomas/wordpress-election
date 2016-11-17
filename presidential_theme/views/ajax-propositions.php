@@ -11,7 +11,7 @@
 		),
 	);
 	$the_query = new WP_Query( $args );
-
+	echo "je suis là";
 	if($the_query->have_posts()) {
 		echo 'oooo';
 	while ($the_query->have_posts() )
