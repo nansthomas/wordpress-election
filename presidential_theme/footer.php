@@ -4,7 +4,7 @@
                 <h3 class="footer__newsletterTitle">Restez informé</h3>
     
                 <div class="footer__fields">
-                    <?php echo [mc4wp_form id="173"]; ?>
+                    <?php echo do_shortcode('[mc4wp_form id="173"]'); ?>
                 </div>
             </div>
             
