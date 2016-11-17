@@ -1,13 +1,13 @@
 <?php
 	$args= array(
 		'post_type' => 'proposition',
-		// 'tax_query' => array(
-		// 		array(
-		// 	'taxonomy'  => 'categorie-proposition',
-		// 	'field' => 'term_id',
-		// 	'terms' => $domaine,
-		// 	),
-		// ),
+		'tax_query' => array(
+				array(
+			'taxonomy'  => 'categorie-proposition',
+			'field' => 'term_id',
+			'terms' => $domaine,
+			),
+		),
 	);
 	$the_query = new WP_Query( $args );
 
