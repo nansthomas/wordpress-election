@@ -26,7 +26,9 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 		if ( $the_query->have_posts() ) {
 			while( $the_query->have_posts() ) {
 				$the_query->the_post();
-	    		echo "<li class='propositionsList__item'>" . the_title() . "</li>";
+	    		echo "<li class='propositionsList__item'>";
+	    		the_title();
+	    		echo "</li>";
 			} 
 		}
 		echo "</ul>";
