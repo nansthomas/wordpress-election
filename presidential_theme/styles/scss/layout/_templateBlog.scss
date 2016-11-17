@@ -56,6 +56,16 @@
 
 }
 
+.templateBlog__articleDate {
+	margin: 10px 15px 10px 105px;
+    display: inline-block;
+
+    a {
+        color: #676767;
+    	text-decoration: none;
+    }
+}
+
 .templateBlog__articleDescription {
 	margin: 10px 15px 25px 15px;
 	color: #676767;
