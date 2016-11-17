@@ -2,6 +2,8 @@
 HERE GOES THE MAIN SCRIPT
 */
 
+console.log('hello');
+
 jQuery(document).ready(function($)
 {
 	$('.propositions__choice').on('click', '.proposition', function(e){
