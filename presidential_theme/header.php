@@ -16,7 +16,6 @@
     <body <?php body_class(); ?>>
         <header class="header">
             <div class="header__nav">
-
                 <?php 
                 $args=array(
                     'theme_location' => 'header', // nom du slug
@@ -28,4 +27,5 @@
                 wp_nav_menu($args);
                 ?>
             </div>
+
         </header>
