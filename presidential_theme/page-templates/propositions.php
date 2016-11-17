@@ -35,13 +35,8 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 
 				echo "<li class='propositionsList__item'>";
 
-				// Get the taxonomy
-				$terms = get_the_terms($post->id, 'category');
-			    $count = count( $terms );
-			    if ( $count > 0 ) {
-			        echo "<span class='propositionsList__itemTaxo'>" . $term->name . "</span>";
-			    }
-	    		
+				// Get the taxonomy for the post
+				the_terms( get_the_ID(), 'categorie-proposition');
 	    		// Display proposition
 	    		the_title();
 	    		echo "</li>";
