@@ -3,7 +3,7 @@
 	Template Name: Page meetings
 	*/
 
-	get_header(); ?>
+	get_header();
 ?>
 
 <h1 class="meetings__title">Meetings à venir</h1>
