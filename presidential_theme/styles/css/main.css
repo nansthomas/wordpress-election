@@ -1123,8 +1123,7 @@ body {
       padding: 0px 15px;
       cursor: pointer;
       -webkit-transition: color ease-in 0.2s;
-      transition: color ease-in 0.2s;
-      text-shadow: none; }
+      transition: color ease-in 0.2s; }
       .donationFormMin__amounts li form button span:hover {
         background: #FFF;
         color: #0785F2;
@@ -1157,8 +1156,7 @@ body {
     .donationFormMin__amounts form {
       width: 100%; } }
   .donationFormMin__amounts form button {
-    background: none;
-    display: none; }
+    background: none; }
     @media (max-width: 600px) {
       .donationFormMin__amounts form button {
         width: 100%; } }
