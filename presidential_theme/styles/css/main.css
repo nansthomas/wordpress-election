@@ -1123,7 +1123,8 @@ body {
       padding: 0px 15px;
       cursor: pointer;
       -webkit-transition: color ease-in 0.2s;
-      transition: color ease-in 0.2s; }
+      transition: color ease-in 0.2s;
+      text-shadow: none; }
       .donationFormMin__amounts li form button span:hover {
         background: #FFF;
         color: #0785F2;
@@ -1152,22 +1153,24 @@ body {
       left: 0;
       width: 100%;
       height: 30px; }
-  @media (max-width: 600px) {
-    .donationFormMin__amounts form {
-      width: 100%; } }
-  .donationFormMin__amounts form button {
-    background: none; }
+  .donationFormMin__amounts form {
+    display: none; }
     @media (max-width: 600px) {
-      .donationFormMin__amounts form button {
+      .donationFormMin__amounts form {
         width: 100%; } }
-    .donationFormMin__amounts form button span {
-      min-height: 30px;
-      display: inline-block;
-      background: #0785F2;
-      border-radius: 5%;
-      text-align: center;
-      padding: 0px 15px;
-      cursor: pointer; }
+    .donationFormMin__amounts form button {
+      background: none; }
+      @media (max-width: 600px) {
+        .donationFormMin__amounts form button {
+          width: 100%; } }
+      .donationFormMin__amounts form button span {
+        min-height: 30px;
+        display: inline-block;
+        background: #0785F2;
+        border-radius: 5%;
+        text-align: center;
+        padding: 0px 15px;
+        cursor: pointer; }
 
 /* .donationFormMin__amount {
 	display: inline-block;
