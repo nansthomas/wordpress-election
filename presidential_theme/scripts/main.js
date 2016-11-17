@@ -5,6 +5,10 @@ HERE GOES THE MAIN SCRIPT
 jQuery(document).ready(function($)
 {
 	$('.propositions__choice').on('click', '.proposition', function(e){
+
+		$('.proposition').removeClass('active');
+		$(this).addClass('active');
+
 		e.preventDefault();
 		var height = $('.propositionsList__items').css('height');
 		$('.propositionsList__items').animate({opacity:0, height: height},500, function(){
@@ -25,4 +29,6 @@ jQuery(document).ready(function($)
 			}
 		);
 	});
+
+
 });
