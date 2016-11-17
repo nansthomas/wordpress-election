@@ -5,7 +5,7 @@
 				array(
 			'taxonomy'  => 'categorie-proposition',
 			'field' => 'term_id',
-			'terms' => $domaine,
+			'terms' => $term_id,
 			),
 		),
 	);
