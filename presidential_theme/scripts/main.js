@@ -2,15 +2,11 @@
 HERE GOES THE MAIN SCRIPT
 */
 
-console.log('hello');
-
 jQuery(document).ready(function($)
 {
 	$('.propositions__choice').on('click', '.proposition', function(e){
-		console.log('click');
 		e.preventDefault();
 		var loadProp = $(this).attr('domaine');
-		console.log(loadProp);
 		// $('.load-more').remove();
 		jQuery.post(
 			ajaxurl,
