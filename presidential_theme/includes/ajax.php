@@ -5,7 +5,7 @@
 	function filtre_propositions_function()
 	{
 		global $wpdb, $_POST;
-		$domaine = $_POST['domaine'];
+		$term_id = $_POST['domaine'];
 		include get_template_directory().'/views/ajax-propositions.php';
 
 		die();

@@ -5,13 +5,12 @@
 		'tax_query' => array(
 				array(
 			'taxonomy'  => 'categorie-proposition',
-			'field' => 'term_id',
+			'field' => 'slug',
 			'terms' => $term_id,
 			),
 		),
 	);
 	$the_query = new WP_Query( $args );
-	echo "je suis là";
 	if($the_query->have_posts()) {
 		echo 'oooo';
 	while ($the_query->have_posts() )
