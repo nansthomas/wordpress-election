@@ -419,9 +419,6 @@ body {
 /**
  * Basic styles for links
  */
-.container {
-  min-height: 100vh; }
-
 @font-face {
   font-family: 'Gotham';
   src: url("../../fonts/Gotham-Medium.eot");
