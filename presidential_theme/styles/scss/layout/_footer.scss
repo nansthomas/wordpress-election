@@ -32,7 +32,6 @@
 
 .footer__fields input {
 	height: 10px;
-	font-size: 15px;
 }
 
 .footer__fields input[type=submit] {
@@ -42,6 +41,7 @@
 .footer__menu ul{
 	display: flex;
     margin: 0;
+    padding: 0;
 
     @include small {
     	flex-direction: column;

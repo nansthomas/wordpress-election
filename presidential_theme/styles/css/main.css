@@ -532,8 +532,7 @@ body {
   font-size: 15px; }
 
 .footer__fields input {
-  height: 10px;
-  font-size: 15px; }
+  height: 10px; }
 
 .footer__fields input[type=submit] {
   height: 44px; }
@@ -542,7 +541,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
   @media (max-width: 600px) {
     .footer__menu ul {
       -webkit-box-orient: vertical;
