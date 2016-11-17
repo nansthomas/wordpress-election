@@ -617,9 +617,20 @@ body {
     color: #000;
     text-decoration: none; }
 
+.proposition__text {
+  width: 50%;
+  margin: auto;
+  font-size: 22px;
+  text-align: center; }
+  @media (max-width: 700px) {
+    .proposition__text {
+      width: 80%; } }
+
 .propositions__choice {
   width: 80%;
-  margin: 60px auto 70px auto;
+  margin: 0px auto 70px auto;
+  padding: 30px;
+  background-color: aliceblue;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,12 +698,17 @@ body {
       left: 0;
       display: block; } }
 
+.reservation__title {
+  width: 80%;
+  margin: 40px auto; }
+
 .reservation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  margin: auto; }
+  margin: 40px auto;
+  height: 500px; }
   .reservation form {
     width: 90%;
     margin-left: 5%; }

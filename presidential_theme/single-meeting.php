@@ -26,8 +26,8 @@
 ?>
 
 			</section>
-			
-			<h2>Réservez votre place</h2>
+
+			<h2 class="reservation__title">Réservez votre place</h2>
 
 			<section class="reservation">
 				
@@ -38,7 +38,7 @@
 			<?php
 			acf_form(array(
 				'post_id'		=> 'new_post',
-				'post_title'	=> 'billet',
+				'post_title'	=> false,
 				'post_content'	=> false,
 				'new_post'		=> array(
 					'post_type'		=> 'billet',
