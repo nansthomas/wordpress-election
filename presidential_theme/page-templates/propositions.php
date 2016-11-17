@@ -11,7 +11,7 @@ get_header();
 <h1 class="propositions__title">
 	<a href="https://nans.ninja/wp-election/propositions/"><?php the_field('titre'); ?></a>
 </h1>
-<p><?php the_field('texte_introductif'); ?></p>
+<p class="proposition__text"><?php the_field('texte_introductif'); ?></p>
 <?php
 $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
