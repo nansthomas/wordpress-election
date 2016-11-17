@@ -17,6 +17,7 @@
 		$the_query->the_post();
 	?>
 		<h2><?php the_title(); ?></h2>
+		<h2><?php echo $domaine; ?></h2>
 	<?php 
 		}
 		// restore original post data
