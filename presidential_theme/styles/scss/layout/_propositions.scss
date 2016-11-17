@@ -88,9 +88,14 @@
 
 .propositionsList__item {
 	list-style: none;
-	margin-bottom: 50px;
+    padding: 20px 0;
+    background: #f8f8f8;
 	font-size: 18px;
 	position: relative;
+
+    &:even {
+        background: #f8f8f8;
+    }
 
 	@include semiMedium {
     	list-style: none;

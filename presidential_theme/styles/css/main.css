@@ -717,9 +717,12 @@ body {
 
 .propositionsList__item {
   list-style: none;
-  margin-bottom: 50px;
+  padding: 20px 0;
+  background: #f8f8f8;
   font-size: 18px;
   position: relative; }
+  .propositionsList__item:even {
+    background: #f8f8f8; }
   @media (max-width: 700px) {
     .propositionsList__item {
       list-style: none;
