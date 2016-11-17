@@ -890,7 +890,15 @@ body {
   width: 310px;
   max-height: 450px;
   background: #F8F8F8;
-  margin: 0 10px 25px 10px; }
+  margin: 0 10px 25px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .templateBlog__articleImage {
   width: 100%;
@@ -917,8 +925,7 @@ body {
     margin-top: 4px; }
 
 .templateBlog__articleDate {
-  margin: 10px 15px 10px 105px;
-  display: inline-block; }
+  margin: 10px 15px; }
   .templateBlog__articleDate a {
     color: #676767;
     text-decoration: none; }
