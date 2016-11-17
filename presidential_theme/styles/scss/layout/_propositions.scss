@@ -13,27 +13,53 @@
     justify-content: space-around;
     padding: 0;
     cursor: pointer;
+
+    @include semiMedium {
+    	flex-direction: column;
+    	width: 90%;
+    }
 }
 
 .proposition {
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #2067c6;
+
+	@include semiMedium {
+    	margin: 5px 0;
+    }
 }
 
 .propositionsList {
 	width: 80%;
     margin: auto;
+
+    @include semiMedium {
+    	width: 90%;
+    }
 }
 
 .propositionsList__items {
 	margin-top: 150px;
+
+	@include semiMedium {
+    	margin-top: 70px;
+    	padding: 0;
+    }
 }
 
 .propositionsList__item {
 	list-style: none;
 	margin-bottom: 50px;
 	font-size: 18px;
+	position: relative;
+
+	@include semiMedium {
+    	list-style: none;
+   	 	margin-bottom: 80px;
+    	font-size: 18px;
+    	position: relative;
+    }
 }
 
 .propositionsList__itemTaxo {
@@ -41,4 +67,19 @@
 	text-transform: uppercase;
 	margin-right: 50px;
 	font-size: 13px;
+
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+}
+
+.propositionsList__itemTitle {
+	position: absolute;
+    left: 170px;
+
+    @include semiMedium {
+    	left: 0;
+    	display: block;
+    }
 }

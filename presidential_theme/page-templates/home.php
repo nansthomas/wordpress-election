@@ -25,7 +25,7 @@ get_header(); ?>
 		<h1 class="largeHeader__title"><?php the_field('titre');?></h1>
 		<h3 class="largeHeader__subtitle"><?php the_field('sous-titre');?></h3>
 
-		<a href="#" class="button">
+		<a href="https://nans.ninja/wp-election/propositions/" class="button">
 			<span><?php the_field('titre-bouton');?></span>
 		</a>
 

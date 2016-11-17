@@ -1,3 +1,6 @@
+        
+        <!-- </div> -->
+        
         <footer class="footer">
 
             <div class="footer__newsletter">
