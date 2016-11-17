@@ -1300,6 +1300,15 @@ body {
       width: 80%; } }
   .tweets li {
     list-style: none; }
+  .tweets .ctf-tweet-text {
+    font-family: Helvetica;
+    font-style: 14px;
+    color: #292F33; }
+  .tweets .ctf-more {
+    text-decoration: none;
+    color: #ABB8C2;
+    font-style: 13px;
+    font-family: Helvetica; }
 
 input {
   padding: 15px 10px;
