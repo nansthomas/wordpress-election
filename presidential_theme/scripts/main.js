@@ -27,6 +27,7 @@ jQuery(document).ready(function($)
 			{
 				$('.propositionsList__items').append(response);
 				height_item = height_item * $('.propositionsList__item').length + 'px';
+				console.log(height_item);
 				$('.propositionsList__items').animate({opacity: 1, height: height_item },500);
 			}
 		);
