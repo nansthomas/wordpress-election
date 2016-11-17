@@ -4,7 +4,7 @@ HERE GOES THE MAIN SCRIPT
 
 jQuery(document).ready(function($)
 {
-	$('.container').on('click', '.proposition', function(e){
+	$('body').on('click', '.proposition', function(e){
 		e.preventDefault();
 		var loadProp = $(this).attr('domaine');
 		// $('.load-more').remove();
