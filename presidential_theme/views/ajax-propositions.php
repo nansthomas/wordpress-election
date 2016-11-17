@@ -1,4 +1,5 @@
 <?php
+	echo $term_id;
 	$args= array(
 		'post_type' => 'proposition',
 		'tax_query' => array(
@@ -12,6 +13,7 @@
 	$the_query = new WP_Query( $args );
 
 	if($the_query->have_posts()) {
+		echo 'oooo';
 	while ($the_query->have_posts() )
 	{
 		$the_query->the_post();
