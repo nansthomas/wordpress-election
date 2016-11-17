@@ -34,7 +34,6 @@
 			?>
 			<h5 class="templateBlog__articleTitle"> <a href=" <?php the_permalink(); ?> "><?php the_title(); ?></a></h5>
 			<h5 class="templateBlog__articleDate"> <a href=" <?php the_permalink(); ?> "><?php the_field('date'); ?></a></h5>
-			<h5 class="templateBlog__articleHeure"> <a href=" <?php the_permalink(); ?> "><?php the_field('heure'); ?></a></h5>
 		</article>
 		<?php 
 			}

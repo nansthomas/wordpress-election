@@ -8,7 +8,9 @@ get_header();
 
 ?>
 
-<h1 class="propositions__title">L'ensemble des propositions</h1>
+<h1 class="propositions__title">
+	<a href="https://nans.ninja/wp-election/propositions/"> L'ensemble des propositions</a>
+</h1>
 
 <?php
 $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
