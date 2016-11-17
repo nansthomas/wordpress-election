@@ -9,10 +9,19 @@
 	cursor: pointer;
 	text-decoration: none;
 	color: #FFF;
+	transform: scale(1);
+   	transition: color ease-in 0.2s;	
 
 	span {
 		text-transform: uppercase;
 		width: 100%;
 		font-weight: 500;
+	}
+
+	&:hover {
+		background: #FFF;
+		color: #0785F2;
+		transform: scale(1);
+    	transition: color ease-in 0.2s;	
 	}
 }

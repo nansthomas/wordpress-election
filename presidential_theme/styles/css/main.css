@@ -453,9 +453,24 @@ body {
       font-weight: 500; }
     .header__nav ul li:after {
       content: '';
-      background: #000;
-      padding: 2px;
-      width: 100%; }
+      background: #0785f2;
+      padding: 1px;
+      width: 100%;
+      display: block;
+      margin: 5px auto 0 auto;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transition: -webkit-transform ease-in 0.2s;
+      transition: -webkit-transform ease-in 0.2s;
+      transition: transform ease-in 0.2s;
+      transition: transform ease-in 0.2s, -webkit-transform ease-in 0.2s; }
+    .header__nav ul li:hover:after {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform ease-in 0.2s;
+      transition: -webkit-transform ease-in 0.2s;
+      transition: transform ease-in 0.2s;
+      transition: transform ease-in 0.2s, -webkit-transform ease-in 0.2s; }
 
 .footer {
   height: 200px;
@@ -1017,11 +1032,22 @@ body {
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
-  color: #FFF; }
+  color: #FFF;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: color ease-in 0.2s;
+  transition: color ease-in 0.2s; }
   .button span {
     text-transform: uppercase;
     width: 100%;
     font-weight: 500; }
+  .button:hover {
+    background: #FFF;
+    color: #0785F2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: color ease-in 0.2s;
+    transition: color ease-in 0.2s; }
 
 .donationFormMin {
   width: 100%;
