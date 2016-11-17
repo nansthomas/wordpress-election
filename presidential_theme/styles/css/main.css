@@ -453,9 +453,24 @@ body {
       font-weight: 500; }
     .header__nav ul li:after {
       content: '';
-      background: #000;
+      background: #919191;
       padding: 2px;
-      width: 100%; }
+      width: 100%;
+      display: block;
+      margin: 5px auto 0 auto;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transition: -webkit-transform ease-in 0.3s;
+      transition: -webkit-transform ease-in 0.3s;
+      transition: transform ease-in 0.3s;
+      transition: transform ease-in 0.3s, -webkit-transform ease-in 0.3s; }
+    .header__nav ul li:hover {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform ease-in 0.3s;
+      transition: -webkit-transform ease-in 0.3s;
+      transition: transform ease-in 0.3s;
+      transition: transform ease-in 0.3s, -webkit-transform ease-in 0.3s; }
 
 .footer {
   height: 200px;
