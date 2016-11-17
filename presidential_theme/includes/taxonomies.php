@@ -1,13 +1,11 @@
 <?php
 
-function category_taxonomy()
-{
-  $taxonomy = 'category-news';
-  $object_type = 'new';
+add_action('init', 'create_custom_taxonomy');
+function create_custom_taxonomy(){
   $args = array(
-      'label' => __( 'Categorie new' ),
-      'rewrite' => array( 'slug' => 'category-news' ),
-      'hierarchical' => false,
-  );
-  register_taxonomy( $taxonomy, $object_type, $args );
+	  'label' => 'Catégorie proposition',
+	  'rewrite' => array( 'slug' => 'categorie-proposition' ),
+	  'hierarchical' => false,
+	);
+  	register_taxonomy( 'categorie-proposition',array('proposition'),$args ); 
 }
