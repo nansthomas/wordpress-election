@@ -1,17 +1,15 @@
 <?php
-	echo $term_id;
 	$args= array(
 		'post_type' => 'proposition',
 		'tax_query' => array(
 				array(
 			'taxonomy'  => 'categorie-proposition',
-			'field' => 'term_id',
-			'terms' => $term_id,
+			'field' => 'slug',
+			'terms' => $slug,
 			),
 		),
 	);
 	$the_query = new WP_Query( $args );
-
 	if($the_query->have_posts()) {
 		echo 'oooo';
 	while ($the_query->have_posts() )
