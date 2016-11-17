@@ -4,7 +4,7 @@ HERE GOES THE MAIN SCRIPT
 
 jQuery(document).ready(function($)
 {
-	$('body').on('click', '.proposition', function(e){
+	$('.propositions__choice').on('click', '.proposition', function(e){
 		console.log('click');
 		e.preventDefault();
 		var loadProp = $(this).attr('domaine');
