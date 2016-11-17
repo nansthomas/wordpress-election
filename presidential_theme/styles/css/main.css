@@ -632,11 +632,11 @@ body {
   padding: 30px;
   background-color: aliceblue;
   list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 0;
   cursor: pointer; }
   @media (max-width: 700px) {
