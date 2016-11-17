@@ -29,8 +29,6 @@
                 <div class="footer__column">
                     <h6 class="footer__titles">Boutique</h6>
                     <ul class="footer__links">
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
                     </ul>
                 </div>
                 <div class="footer__column">

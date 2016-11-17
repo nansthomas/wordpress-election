@@ -45,6 +45,22 @@
 	@include semiMedium {
     	margin: 5px 0;
     }
+
+    &:after {
+        content:'';
+        background: #0785f2;
+        padding: 1px;
+        width: 100%;
+        display: block;
+        margin: 5px auto 0 auto;    
+        transform: scale(0);
+        transition: transform ease-in 0.4s; 
+    }
+
+    &:hover:after {
+        transform: scale(1);
+        transition: transform ease-in 0.4s; 
+    }
 }
 
 .propositionsList {
