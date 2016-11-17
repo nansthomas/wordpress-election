@@ -619,6 +619,16 @@ body {
       justify-content: space-around;
   padding: 0; }
 
+.proposition {
+  font-weight: 500; }
+
+.propositionsList {
+  width: 80%;
+  margin: auto; }
+
+.propositionsList__item {
+  list-style: none; }
+
 .headerShop {
   height: 80vh;
   width: 85%;
