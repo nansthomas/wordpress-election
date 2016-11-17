@@ -34,6 +34,7 @@
 	list-style: none;
 	margin-bottom: 50px;
 	font-size: 18px;
+	position: relative;
 }
 
 .propositionsList__itemTaxo {
@@ -46,4 +47,9 @@
 		text-decoration: none;
 		color: #000;
 	}
+}
+
+.propositionsList__itemTitle {
+	position: absolute;
+    left: 170px;
 }

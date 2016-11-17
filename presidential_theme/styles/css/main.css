@@ -641,7 +641,8 @@ body {
 .propositionsList__item {
   list-style: none;
   margin-bottom: 50px;
-  font-size: 18px; }
+  font-size: 18px;
+  position: relative; }
 
 .propositionsList__itemTaxo {
   font-weight: 500;
@@ -651,6 +652,10 @@ body {
   .propositionsList__itemTaxo a {
     text-decoration: none;
     color: #000; }
+
+.propositionsList__itemTitle {
+  position: absolute;
+  left: 170px; }
 
 .headerShop {
   height: 80vh;
