@@ -79,6 +79,7 @@
 
 .propositionsList__items {
 	margin-top: 80px;
+    padding-left: 0;
 
 	@include semiMedium {
     	margin-top: 70px;
@@ -88,20 +89,22 @@
 
 .propositionsList__item {
 	list-style: none;
-    padding: 20px 0;
-    background: #f8f8f8;
+    padding: 40px 0;
+    background: rgba(58, 155, 239, 0.15);
 	font-size: 18px;
 	position: relative;
 
     &:nth-child(even) {
-        background: red;
+        background: rgba(11, 134, 240, 0.22);
     }
 
 	@include semiMedium {
     	list-style: none;
-   	 	margin-bottom: 80px;
     	font-size: 18px;
     	position: relative;
+        padding: 10px;
+        height: 70px;
+        left: 10px;
     }
 }
 
@@ -119,7 +122,7 @@
 
 .propositionsList__itemTitle {
 	position: absolute;
-    left: 170px;
+    left: 200px;
 
     @include semiMedium {
     	left: 0;

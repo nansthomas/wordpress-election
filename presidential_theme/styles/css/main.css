@@ -709,7 +709,8 @@ body {
       width: 90%; } }
 
 .propositionsList__items {
-  margin-top: 80px; }
+  margin-top: 80px;
+  padding-left: 0; }
   @media (max-width: 700px) {
     .propositionsList__items {
       margin-top: 70px;
@@ -717,18 +718,20 @@ body {
 
 .propositionsList__item {
   list-style: none;
-  padding: 20px 0;
-  background: #f8f8f8;
+  padding: 40px 0;
+  background: rgba(58, 155, 239, 0.15);
   font-size: 18px;
   position: relative; }
   .propositionsList__item:nth-child(even) {
-    background: red; }
+    background: rgba(11, 134, 240, 0.22); }
   @media (max-width: 700px) {
     .propositionsList__item {
       list-style: none;
-      margin-bottom: 80px;
       font-size: 18px;
-      position: relative; } }
+      position: relative;
+      padding: 10px;
+      height: 70px;
+      left: 10px; } }
 
 .propositionsList__itemTaxo {
   font-weight: 500;
@@ -741,7 +744,7 @@ body {
 
 .propositionsList__itemTitle {
   position: absolute;
-  left: 170px; }
+  left: 200px; }
   @media (max-width: 700px) {
     .propositionsList__itemTitle {
       left: 0;
