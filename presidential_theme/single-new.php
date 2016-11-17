@@ -22,6 +22,9 @@
 			</section>
 
 			<div class="articleContent"><?php the_content(); ?></div>
+			<div class="sharing">
+					<?php dynamic_sidebar( 'sidebar-social-share' ); ?>
+			</div>
 <?php
 		}
 	}
