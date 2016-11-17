@@ -20,8 +20,9 @@ jQuery(document).ready(function($)
 			},
 			function(response)
 			{
+				var height = $('.propositionsList__item').length * $('.propositionsList__item')[0].style('height'); 
 				$('.propositionsList__items').append(response);
-				$('.propositionsList__items').animate({opacity: 1},500);
+				$('.propositionsList__items').animate({opacity: 1, height: height},500);
 			}
 		);
 	});
