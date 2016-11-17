@@ -1,3 +1,4 @@
+
 <?php
 	/*
 	Template Name: Page propositions
@@ -5,6 +6,11 @@
 
 get_header();	
 
+?>
+
+<h1 class="propositions__title">L'ensemble des propositions</h1>
+
+<?php
 $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 	    echo '<ul class="propositions__choice">';
@@ -26,7 +32,17 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 		if ( $the_query->have_posts() ) {
 			while( $the_query->have_posts() ) {
 				$the_query->the_post();
-	    		echo "<li class='propositionsList__item'>";
+
+				echo "<li class='propositionsList__item'>";
+
+				// Get the taxonomy
+				$terms = get_the_terms($post->id, 'category');
+			    $count = count( $terms );
+			    if ( $count > 0 ) {
+			        echo "<span class='propositionsList__itemTaxo'>" . $term->name . "</span>";
+			    }
+	    		
+	    		// Display proposition
 	    		the_title();
 	    		echo "</li>";
 			} 

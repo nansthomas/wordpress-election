@@ -1,3 +1,10 @@
+.propositions__title {
+	text-align: center;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
 .propositions__choice {
 	width: 80%;
     margin: 70px auto;
@@ -9,6 +16,7 @@
 
 .proposition {
 	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .propositionsList {
@@ -22,4 +30,10 @@
 
 .propositionsList__item {
 	list-style: none;
+}
+
+.propositionsList__itemTaxo {
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-right: 50px;
 }
