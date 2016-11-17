@@ -12,7 +12,7 @@
 
 .proposition__text {
     width: 50%;
-    margin: auto;
+    margin: 0 auto 30px auto;
     font-size: 22px;
     text-align: center;
 
@@ -57,7 +57,7 @@
 }
 
 .propositionsList__items {
-	margin-top: 150px;
+	margin-top: 80px;
 
 	@include semiMedium {
     	margin-top: 70px;
