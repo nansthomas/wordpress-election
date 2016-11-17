@@ -722,7 +722,7 @@ body {
   font-size: 18px;
   position: relative; }
   .propositionsList__item:even {
-    background: #f8f8f8; }
+    background: red; }
   @media (max-width: 700px) {
     .propositionsList__item {
       list-style: none;

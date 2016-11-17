@@ -94,7 +94,7 @@
 	position: relative;
 
     &:even {
-        background: #f8f8f8;
+        background: red;
     }
 
 	@include semiMedium {
