@@ -24,7 +24,7 @@ jQuery(document).ready(function($)
 			},
 			function(response)
 			{
-				console.log($('.propositionsList__item')[0].css('height'));
+				console.log($('.propositionsList__item'));
 				var height = $('.propositionsList__item').length * parseInt($($('.propositionsList__item')[0]).css('height'));
 				console.log(height);
 				$('.propositionsList__items').append(response);
