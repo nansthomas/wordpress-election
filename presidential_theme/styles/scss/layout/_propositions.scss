@@ -45,12 +45,8 @@
 	@include semiMedium {
     	margin: 5px 0;
 
-        &:hover:after {
-            transform: scale(0);
-        }
-
-        &.active:after{
-            transform: scale(0);
+        &:after {
+            padding: 0;
         }
     }
 

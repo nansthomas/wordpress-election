@@ -673,12 +673,8 @@ body {
   @media (max-width: 700px) {
     .proposition {
       margin: 5px 0; }
-      .proposition:hover:after {
-        -webkit-transform: scale(0);
-                transform: scale(0); }
-      .proposition.active:after {
-        -webkit-transform: scale(0);
-                transform: scale(0); } }
+      .proposition:after {
+        padding: 0; } }
   .proposition:after {
     content: '';
     background: #0785f2;
