@@ -112,6 +112,7 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	margin-right: 50px;
+    margin-left: 20px;
 	font-size: 13px;
 
 	a {
@@ -125,7 +126,7 @@
     left: 200px;
 
     @include semiMedium {
-    	left: 0;
+    	left: 10px;
     	display: block;
     }
 }
