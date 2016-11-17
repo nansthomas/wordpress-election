@@ -35,7 +35,7 @@ get_header(); ?>
 
 </section>
 
-<form class="newsletterForm">
+<div class="newsletterForm">
 	
 	<h3 class="newsletterForm__title"><?php the_field('newsletter-titre');?></h3>
 	
@@ -43,7 +43,7 @@ get_header(); ?>
         <?php echo do_shortcode('[mc4wp_form id="173"]'); ?>
 	</div>
 
-</form>
+</div>
 
 <section class="templateBlog">
     
