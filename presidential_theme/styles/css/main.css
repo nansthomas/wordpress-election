@@ -767,6 +767,8 @@ body {
   .reservation form {
     width: 90%;
     margin-left: 5%; }
+  .reservation input[type=submit] {
+    width: auto; }
 
 .headerShop {
   height: 80vh;
