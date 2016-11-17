@@ -669,10 +669,13 @@ body {
 .proposition {
   font-weight: 500;
   text-transform: uppercase;
-  color: #2067c6; }
+  color: #2067c6;
+  text-align: center; }
   @media (max-width: 700px) {
     .proposition {
-      margin: 5px 0; } }
+      margin: 5px 0; }
+      .proposition:after {
+        display: none; } }
   .proposition:after {
     content: '';
     background: #0785f2;
@@ -747,7 +750,8 @@ body {
 
 .propositionsList__itemTitle {
   position: absolute;
-  left: 200px; }
+  left: 200px;
+  padding-left: 10px; }
   @media (max-width: 700px) {
     .propositionsList__itemTitle {
       left: 10px;
@@ -764,9 +768,20 @@ body {
   width: 80%;
   margin: 40px auto;
   height: 500px; }
+  @media (max-width: 700px) {
+    .reservation {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .reservation form {
     width: 90%;
     margin-left: 5%; }
+    @media (max-width: 700px) {
+      .reservation form {
+        margin-left: 0; } }
+  .reservation input[type=submit] {
+    width: auto; }
 
 .headerShop {
   height: 80vh;
