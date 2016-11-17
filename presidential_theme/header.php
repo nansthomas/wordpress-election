@@ -16,8 +16,8 @@
     <body <?php body_class(); ?>>
             
             <header class="header">
-                <div class="header__nav" style="display: flex;">
-                    <div id="header-image" style="width:50px;">
+                <div class="header__nav">
+                    <div id="header__image">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" width="50" height="36" />
                         </a>

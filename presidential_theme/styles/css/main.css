@@ -440,6 +440,20 @@ body {
   width: 100%;
   top: 0; }
 
+.header__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .header__nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
