@@ -438,7 +438,7 @@ body {
   position: fixed;
   background: #FFF;
   width: 100%;
-  top: 32px; }
+  top: 0; }
 
 .header__nav ul {
   display: -webkit-box;
@@ -607,6 +607,17 @@ body {
   @media (max-width: 1000px) {
     .articleContent {
       padding: 50px 20px; } }
+
+.propositions__choice {
+  width: 80%;
+  margin: 70px auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0; }
 
 .headerShop {
   height: 80vh;
