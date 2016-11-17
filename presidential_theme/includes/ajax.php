@@ -6,7 +6,6 @@
 	{
 		global $wpdb, $_POST;
 
-		$domaine = $_POST['domaine'];
-		return $domaine;
+		$term_id = $_POST['domaine'];
 		include get_template_directory().'/views/ajax-propositions.php';
 	}
