@@ -440,7 +440,7 @@ body {
   width: 100%;
   top: 0; }
 
-.header__image {
+#header__image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
