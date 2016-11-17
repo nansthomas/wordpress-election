@@ -14,7 +14,7 @@
 	while ($the_query->have_posts() )
 	{
 		$the_query->the_post();
-		echo "<li class='propositionsList__item'><span class='propositionsList__itemTitle'>";
+		echo "<li class='propositionsList__item'><span class='propositionsList__itemTitle' style='position:static'>";
 	    the_title();
 		echo "</span></li>";
 	}

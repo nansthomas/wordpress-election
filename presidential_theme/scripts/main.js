@@ -17,8 +17,8 @@ jQuery(document).ready(function($)
 			function(response)
 			{
 				console.log(response);
-				$('.propositionsList').empty();
-				$('.propositionsList').append(response);
+				$('.propositionsList__items').empty();
+				$('.propositionsList__items').append(response);
 			}
 		);
 	});
