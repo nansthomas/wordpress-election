@@ -1,12 +1,11 @@
 <?php
-	echo $term_id;
 	$args= array(
 		'post_type' => 'proposition',
 		'tax_query' => array(
 				array(
 			'taxonomy'  => 'categorie-proposition',
 			'field' => 'slug',
-			'terms' => $term_id,
+			'terms' => $slug,
 			),
 		),
 	);
