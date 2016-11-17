@@ -21,5 +21,10 @@ wp_register_style( 'main_style', get_template_directory_uri() . '/styles/css/mai
 // appel du style dans la page
 wp_enqueue_style( 'main_style' );
 
+
+  wp_localize_script( 'main_script', 'ajaxurl', admin_url('admin-ajax.php'));
+
+}
+
 }
 add_action( 'wp_enqueue_scripts', 'ajout_scripts' );
