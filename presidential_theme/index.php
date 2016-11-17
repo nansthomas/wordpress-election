@@ -10,6 +10,8 @@ get_header();
 
 <h1 class="propositions__title">L'ensemble des propositions</h1>
 
+<h5 class="propositions__choiceTitle">Filtrer les propositions</h5>
+
 <?php
 $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
