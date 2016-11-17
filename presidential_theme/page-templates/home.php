@@ -43,7 +43,7 @@ get_header(); ?>
 		<form action="//nansthomas.us14.list-manage.com/subscribe/post?u=db095afda9eb2230fb8694eb1&amp;id=fab50def93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		    <div id="mc_embed_signup_scroll">
 		<div class="mc-field-group">
-			<label for="mce-EMAIL"><span class="asterisk">*</span>
+			<label for="mce-EMAIL"><span class="asterisk"></span>
 		</label>
 			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 		</div>
