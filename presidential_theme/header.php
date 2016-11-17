@@ -29,7 +29,7 @@
                     ?>
                 </div>
                 
-                <img src="<?php echo home_url( 'wp-content/themes/presidential_theme/img/logo.png' ); ?>" alt="" class="logo">
+                <img src="<?php echo get_template_uri().'/img/logo.png'; ?>" alt="" class="logo">
             </header>
 
             <!-- <div class="container"> -->
