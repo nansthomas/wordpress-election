@@ -35,7 +35,7 @@
 			<?php
 			acf_form(array(
 				'post_id'		=> 'new_post',
-				'post_title'	=> false,
+				'post_title'	=> 'billet',
 				'post_content'	=> false,
 				'new_post'		=> array(
 					'post_type'		=> 'billet',
