@@ -687,6 +687,16 @@ body {
       left: 0;
       display: block; } }
 
+.reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto; }
+  .reservation form {
+    width: 90%;
+    margin-left: 5%; }
+
 .headerShop {
   height: 80vh;
   width: 85%;
