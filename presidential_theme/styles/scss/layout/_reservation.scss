@@ -9,9 +9,17 @@
     margin: 40px auto;
     height: 500px;
 
+    @include semiMedium {
+        flex-direction: column;
+    }
+
     form {
     	width: 90%;
     	margin-left: 5%;	
+
+        @include semiMedium {
+            margin-left: 5%;
+        }
     }
 
     input[type=submit] {
