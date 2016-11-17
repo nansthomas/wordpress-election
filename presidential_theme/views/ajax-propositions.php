@@ -14,9 +14,9 @@
 	while ($the_query->have_posts() )
 	{
 		$the_query->the_post();
-		echo "<li class='propositionsList__item'>";
+		echo "<li class='propositionsList__item'><span class='propositionList__itemTitle'>";
 		the_title();
-		echo "</li>";
+		echo "</span></li>";
 	}
 		// restore original post data
 		wp_reset_postdata();
