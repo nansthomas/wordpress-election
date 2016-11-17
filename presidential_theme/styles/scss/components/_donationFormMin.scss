@@ -119,7 +119,6 @@
 	}
 
 	form {
-		display: none;
 
 		@include small{
 			width: 100%;
@@ -127,6 +126,7 @@
 
 		button {
 			background: none;
+			display: none;
 
 			@include small{
 				width: 100%;
