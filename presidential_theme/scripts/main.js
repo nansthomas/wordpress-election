@@ -11,7 +11,7 @@ jQuery(document).ready(function($)
 
 		e.preventDefault();
 		var height = $('.propositionsList__items').css('height');
-		var height_item = $('.propositionsList__item:first').height();
+		var height_item = $('.propositionsList__item:first').outerHeight();
 		$('.propositionsList__items').animate({opacity:0, height: height},500, function(){
 			$('.propositionsList__items').empty();
 		});
