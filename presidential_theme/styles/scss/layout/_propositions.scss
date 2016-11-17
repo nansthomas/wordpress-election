@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-around;
     padding: 0;
+    cursor: pointer;
 }
 
 .proposition {
@@ -25,15 +26,17 @@
 }
 
 .propositionsList__items {
-
+	margin-top: 150px;
 }
 
 .propositionsList__item {
 	list-style: none;
+	margin-bottom: 50px;
 }
 
 .propositionsList__itemTaxo {
 	font-weight: 500;
 	text-transform: uppercase;
 	margin-right: 50px;
+	font-size: 13px;
 }
