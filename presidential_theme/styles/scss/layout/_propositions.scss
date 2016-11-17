@@ -127,6 +127,7 @@
 .propositionsList__itemTitle {
 	position: absolute;
     left: 200px;
+    padding-left: 10px;
 
     @include semiMedium {
     	left: 10px;
