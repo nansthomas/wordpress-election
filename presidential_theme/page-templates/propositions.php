@@ -3,6 +3,8 @@
 	Template Name: Page propositions
 	*/
 
+get_header();	
+
 $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 	    echo '<ul>';
@@ -31,3 +33,5 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 	?>
 
 </div>
+
+<?php get_footer(); ?>
