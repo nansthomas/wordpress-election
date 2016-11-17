@@ -27,12 +27,12 @@
 			display: block;
     		margin: 5px auto 0 auto;	
     		transform: scale(0);
-    		transition: transform ease-in 0.2s;	
+    		transition: transform ease-in 0.4s;	
     	}
 
     	&:hover:after {
     		transform: scale(1);
-    		transition: transform ease-in 0.2s;	
+    		transition: transform ease-in 0.4s;	
     	}
     }
 } 
