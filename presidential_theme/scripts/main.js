@@ -24,10 +24,10 @@ jQuery(document).ready(function($)
 			},
 			function(response)
 			{
-				console.log($('.propositionsList__item:first').height());
 				var height = $('.propositionsList__item').length * parseInt($($('.propositionsList__item')[0]).css('height'));
 				console.log(height);
 				$('.propositionsList__items').append(response);
+				height = $('.propositionsList__item:first').height();
 				$('.propositionsList__items').animate({opacity: 1, height: height},500);
 			}
 		);
