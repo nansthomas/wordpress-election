@@ -27,7 +27,7 @@ jQuery(document).ready(function($)
 			{
 				console.log(height_item);
 				$('.propositionsList__items').append(response);
-				$('.propositionsList__items').animate({opacity: 1, height: (height_item * $('.propositionsList__item:first').length)},500);
+				$('.propositionsList__items').animate({opacity: 1, height: (height_item * $('.propositionsList__item:first').length) + 'px'},500);
 			}
 		);
 	});
