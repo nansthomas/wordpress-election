@@ -25,21 +25,20 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 		
 	<?php 
 
-		$args = array( 'post_type' => "proposition" );
+		$args = array( 'post_type' => "proposition",
+				'posts_per_page' => -1,
+			);
 
 		$the_query = new WP_Query( $args );
 		echo "<ul class='propositionsList__items'>";
 		if ( $the_query->have_posts() ) {
 			while( $the_query->have_posts() ) {
 				$the_query->the_post();
-
 				echo "<li class='propositionsList__item'>";
-
 				// Get the taxonomy for the post
 				echo '<span class="propositionsList__itemTaxo" >';
 				the_terms( get_the_ID(), 'categorie-proposition');
 				echo '</span>';
-
 	    		// Display proposition
 	    		echo "<span class='propositionsList__itemTitle' >";
 	    		the_title();
