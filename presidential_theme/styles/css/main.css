@@ -464,7 +464,7 @@ body {
       transition: -webkit-transform ease-in 0.3s;
       transition: transform ease-in 0.3s;
       transition: transform ease-in 0.3s, -webkit-transform ease-in 0.3s; }
-    .header__nav ul li:after:hover {
+    .header__nav ul li:hover:after {
       -webkit-transform: scale(1);
               transform: scale(1);
       -webkit-transition: -webkit-transform ease-in 0.3s;
