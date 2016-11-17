@@ -721,7 +721,7 @@ body {
   background: #f8f8f8;
   font-size: 18px;
   position: relative; }
-  .propositionsList__item:even {
+  .propositionsList__item:nth-child(even) {
     background: red; }
   @media (max-width: 700px) {
     .propositionsList__item {
