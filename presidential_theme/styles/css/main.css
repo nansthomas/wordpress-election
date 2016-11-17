@@ -1121,28 +1121,37 @@ body {
       border-radius: 5%;
       text-align: center;
       padding: 0px 15px;
-      cursor: pointer; }
-  @media (max-width: 600px) {
-    .donationFormMin__amounts li.custom {
-      width: 90%; } }
-  .donationFormMin__amounts li.custom input {
-    padding: 5px 10px;
-    width: 120px;
-    margin: 0 10px 0 40px; }
-    @media (max-width: 700px) {
-      .donationFormMin__amounts li.custom input {
-        margin: 0 10px 0 0px;
-        width: 100%;
-        text-align: center; } }
-  .donationFormMin__amounts li.custom:before {
-    content: '';
-    background: rgba(255, 255, 255, 0);
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px; }
+      cursor: pointer;
+      -webkit-transition: color ease-in 0.2s;
+      transition: color ease-in 0.2s; }
+      .donationFormMin__amounts li form button span:hover {
+        background: #FFF;
+        color: #0785F2;
+        -webkit-transition: color ease-in 0.2s;
+        transition: color ease-in 0.2s; }
+  .donationFormMin__amounts li.custom {
+    display: none; }
+    @media (max-width: 600px) {
+      .donationFormMin__amounts li.custom {
+        width: 90%; } }
+    .donationFormMin__amounts li.custom input {
+      padding: 5px 10px;
+      width: 120px;
+      margin: 0 10px 0 40px; }
+      @media (max-width: 700px) {
+        .donationFormMin__amounts li.custom input {
+          margin: 0 10px 0 0px;
+          width: 100%;
+          text-align: center; } }
+    .donationFormMin__amounts li.custom:before {
+      content: '';
+      background: rgba(255, 255, 255, 0);
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30px; }
   @media (max-width: 600px) {
     .donationFormMin__amounts form {
       width: 100%; } }
