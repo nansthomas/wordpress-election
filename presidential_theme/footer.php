@@ -4,9 +4,7 @@
                 <h3 class="footer__newsletterTitle">Restez informé</h3>
     
                 <div class="footer__fields">
-                    <input type="mail" placeholder="Email">
-
-                    <input type="submit" value="S'inscrire">
+                    [mc4wp_form id="173"]
                 </div>
             </div>
             
