@@ -673,6 +673,33 @@ body {
   @media (max-width: 700px) {
     .proposition {
       margin: 5px 0; } }
+  .proposition:after {
+    content: '';
+    background: #0785f2;
+    padding: 1px;
+    width: 100%;
+    display: block;
+    margin: 5px auto 0 auto;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform ease-in 0.4s;
+    transition: -webkit-transform ease-in 0.4s;
+    transition: transform ease-in 0.4s;
+    transition: transform ease-in 0.4s, -webkit-transform ease-in 0.4s; }
+  .proposition:hover:after {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform ease-in 0.4s;
+    transition: -webkit-transform ease-in 0.4s;
+    transition: transform ease-in 0.4s;
+    transition: transform ease-in 0.4s, -webkit-transform ease-in 0.4s; }
+  .proposition.active:after {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform ease-in 0.4s;
+    transition: -webkit-transform ease-in 0.4s;
+    transition: transform ease-in 0.4s;
+    transition: transform ease-in 0.4s, -webkit-transform ease-in 0.4s; }
 
 .propositionsList {
   width: 80%;
@@ -682,7 +709,8 @@ body {
       width: 90%; } }
 
 .propositionsList__items {
-  margin-top: 80px; }
+  margin-top: 80px;
+  padding-left: 0; }
   @media (max-width: 700px) {
     .propositionsList__items {
       margin-top: 70px;
@@ -690,31 +718,39 @@ body {
 
 .propositionsList__item {
   list-style: none;
-  margin-bottom: 50px;
+  padding: 40px 0;
+  background: rgba(58, 155, 239, 0.15);
   font-size: 18px;
   position: relative; }
+  .propositionsList__item:nth-child(even) {
+    background: rgba(11, 134, 240, 0.22); }
   @media (max-width: 700px) {
     .propositionsList__item {
       list-style: none;
-      margin-bottom: 80px;
       font-size: 18px;
-      position: relative; } }
+      position: relative;
+      padding: 10px;
+      height: 70px; } }
 
 .propositionsList__itemTaxo {
   font-weight: 500;
   text-transform: uppercase;
   margin-right: 50px;
+  margin-left: 20px;
   font-size: 13px; }
+  @media (max-width: 700px) {
+    .propositionsList__itemTaxo {
+      margin-left: 0px; } }
   .propositionsList__itemTaxo a {
     text-decoration: none;
     color: #000; }
 
 .propositionsList__itemTitle {
   position: absolute;
-  left: 170px; }
+  left: 200px; }
   @media (max-width: 700px) {
     .propositionsList__itemTitle {
-      left: 0;
+      left: 10px;
       display: block; } }
 
 .reservation__title {
