@@ -775,7 +775,7 @@ body {
     margin-left: 5%; }
     @media (max-width: 700px) {
       .reservation form {
-        margin-left: 5%; } }
+        margin-left: 0; } }
   .reservation input[type=submit] {
     width: auto; }
 
