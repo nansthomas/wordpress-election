@@ -1243,16 +1243,7 @@ body {
 
 input {
   padding: 15px 10px;
-  font-family: Gotham;
-  color: #FFF;
-  background: #0785F2;
-  -webkit-transition: color ease-in 0.2s;
-  transition: color ease-in 0.2s; }
-  input:hover {
-    background: #FFF;
-    color: #0785F2;
-    -webkit-transition: color ease-in 0.2s;
-    transition: color ease-in 0.2s; }
+  font-family: Gotham; }
 
 input[type=submit] {
   border: none;
@@ -1262,7 +1253,14 @@ input[type=submit] {
   cursor: pointer;
   height: 51.5px;
   vertical-align: top;
-  border-radius: 4px; }
+  border-radius: 4px;
+  -webkit-transition: color ease-in 0.2s;
+  transition: color ease-in 0.2s; }
+  input[type=submit]:hover {
+    background: #FFF;
+    color: #0785F2;
+    -webkit-transition: color ease-in 0.2s;
+    transition: color ease-in 0.2s; }
 
 .meetings__title {
   text-align: center;
