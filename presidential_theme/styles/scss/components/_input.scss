@@ -1,6 +1,15 @@
 input {
     padding: 15px 10px;
     font-family: Gotham;
+    color: #FFF;
+    background: #0785F2;
+    transition: color ease-in 0.2s; 
+
+    &:hover {
+        background: #FFF;
+        color: #0785F2;
+        transition: color ease-in 0.2s; 
+    }
 }
 
 input[type=submit] {

@@ -460,17 +460,17 @@ body {
       margin: 5px auto 0 auto;
       -webkit-transform: scale(0);
               transform: scale(0);
-      -webkit-transition: -webkit-transform ease-in 0.2s;
-      transition: -webkit-transform ease-in 0.2s;
-      transition: transform ease-in 0.2s;
-      transition: transform ease-in 0.2s, -webkit-transform ease-in 0.2s; }
+      -webkit-transition: -webkit-transform ease-in 0.4s;
+      transition: -webkit-transform ease-in 0.4s;
+      transition: transform ease-in 0.4s;
+      transition: transform ease-in 0.4s, -webkit-transform ease-in 0.4s; }
     .header__nav ul li:hover:after {
       -webkit-transform: scale(1);
               transform: scale(1);
-      -webkit-transition: -webkit-transform ease-in 0.2s;
-      transition: -webkit-transform ease-in 0.2s;
-      transition: transform ease-in 0.2s;
-      transition: transform ease-in 0.2s, -webkit-transform ease-in 0.2s; }
+      -webkit-transition: -webkit-transform ease-in 0.4s;
+      transition: -webkit-transform ease-in 0.4s;
+      transition: transform ease-in 0.4s;
+      transition: transform ease-in 0.4s, -webkit-transform ease-in 0.4s; }
 
 .footer {
   height: 200px;
@@ -1044,8 +1044,6 @@ body {
   .button:hover {
     background: #FFF;
     color: #0785F2;
-    -webkit-transform: scale(1);
-            transform: scale(1);
     -webkit-transition: color ease-in 0.2s;
     transition: color ease-in 0.2s; }
 
@@ -1245,7 +1243,16 @@ body {
 
 input {
   padding: 15px 10px;
-  font-family: Gotham; }
+  font-family: Gotham;
+  color: #FFF;
+  background: #0785F2;
+  -webkit-transition: color ease-in 0.2s;
+  transition: color ease-in 0.2s; }
+  input:hover {
+    background: #FFF;
+    color: #0785F2;
+    -webkit-transition: color ease-in 0.2s;
+    transition: color ease-in 0.2s; }
 
 input[type=submit] {
   border: none;
