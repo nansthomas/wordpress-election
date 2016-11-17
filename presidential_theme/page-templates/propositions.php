@@ -15,18 +15,18 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 	}
 ?>
 
-<div class="propositions">
+<div class="propositionsList">
 		
 	<?php 
 
 		$args = array( 'post_type' => "proposition" );
 
 		$the_query = new WP_Query( $args );
-		echo "<ul>";
+		echo "<ul class='propositionsList__items'>";
 		if ( $the_query->have_posts() ) {
 			while( $the_query->have_posts() ) {
 				$the_query->the_post();
-	    		echo "<li>" . the_title() . "</li>";
+	    		echo "<li class='propositionsList__item'>" . the_title() . "</li>";
 			} 
 		}
 		echo "</ul>";
