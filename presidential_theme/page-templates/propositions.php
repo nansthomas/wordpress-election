@@ -41,8 +41,9 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 				echo '</span>';
 
 	    		// Display proposition
+	    		echo "<span class='propositionsList__titles'>";
 	    		the_title();
-	    		echo "</li>";
+	    		echo "</span></li>";
 			} 
 		}
 		echo "</ul>";
