@@ -61,6 +61,11 @@
         transform: scale(1);
         transition: transform ease-in 0.4s; 
     }
+
+    &.active:after{
+        transform: scale(1);
+        transition: transform ease-in 0.4s; 
+    }
 }
 
 .propositionsList {

@@ -693,6 +693,13 @@ body {
     transition: -webkit-transform ease-in 0.4s;
     transition: transform ease-in 0.4s;
     transition: transform ease-in 0.4s, -webkit-transform ease-in 0.4s; }
+  .proposition.active:after {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform ease-in 0.4s;
+    transition: -webkit-transform ease-in 0.4s;
+    transition: transform ease-in 0.4s;
+    transition: transform ease-in 0.4s, -webkit-transform ease-in 0.4s; }
 
 .propositionsList {
   width: 80%;
