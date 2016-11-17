@@ -7,7 +7,7 @@ get_header();
 
 $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-	    echo '<ul>';
+	    echo '<ul class="propositions__choice">';
 	    foreach ( $terms as $term ) {
 	        echo '<li class="proposition" domaine="' . $term->slug . '">' . $term->name . '</li>';
 	    }
@@ -22,13 +22,14 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 		$args = array( 'post_type' => "proposition" );
 
 		$the_query = new WP_Query( $args );
-
+		echo "<ul>";
 		if ( $the_query->have_posts() ) {
 			while( $the_query->have_posts() ) {
 				$the_query->the_post();
-	    		the_title();
+	    		echo "<li>" . the_title() . "</li>";
 			} 
 		}
+		echo "</ul>";
 
 	?>
 
