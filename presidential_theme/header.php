@@ -28,7 +28,8 @@
                     wp_nav_menu($args);
                     ?>
                 </div>
-
+                
+                <img src="<?php echo home_url( 'wp-content/themes/presidential_theme/img/logo.png' ); ?>" alt="" class="log">
             </header>
 
             <!-- <div class="container"> -->
