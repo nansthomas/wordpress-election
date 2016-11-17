@@ -669,12 +669,13 @@ body {
 .proposition {
   font-weight: 500;
   text-transform: uppercase;
-  color: #2067c6; }
+  color: #2067c6;
+  text-align: center; }
   @media (max-width: 700px) {
     .proposition {
       margin: 5px 0; }
       .proposition:after {
-        padding: 0; } }
+        display: none; } }
   .proposition:after {
     content: '';
     background: #0785f2;
