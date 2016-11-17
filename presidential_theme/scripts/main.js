@@ -26,7 +26,7 @@ jQuery(document).ready(function($)
 			function(response)
 			{
 				$('.propositionsList__items').append(response);
-				$('.propositionsList__items').animate({opacity: 1, height: height},500);
+				$('.propositionsList__items').animate({opacity: 1, height: (height_item * $('.propositionsList__item:first').length)},500);
 			}
 		);
 	});
