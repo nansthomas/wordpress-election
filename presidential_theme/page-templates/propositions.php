@@ -37,7 +37,7 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 
 				// Get the taxonomy for the post
 				the_terms( get_the_ID(), 'categorie-proposition');
-				echo 'hienfkmk';
+				
 	    		// Display proposition
 	    		the_title();
 	    		echo "</li>";
