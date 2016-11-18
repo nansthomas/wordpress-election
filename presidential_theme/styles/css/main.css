@@ -769,19 +769,16 @@ body {
   display: flex;
   width: 80%;
   margin: 40px auto;
-  height: 500px; }
+  height: 700px; }
   @media (max-width: 700px) {
     .reservation {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
-  .reservation form {
+  .reservation .nf-form-cont {
     width: 90%;
     margin-left: 5%; }
-    @media (max-width: 700px) {
-      .reservation form {
-        margin-left: 0; } }
   .reservation input[type=submit] {
     width: auto; }
 
