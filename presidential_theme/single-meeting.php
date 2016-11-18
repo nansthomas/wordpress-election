@@ -36,17 +36,8 @@
 			src="https://www.google.com/maps/embed/v1/search?q=<?php echo get_field('adresse').' '.get_field('ville'); ?>&key=AIzaSyATj2xDYI8V_JZtWs0irnKq4GmorB84F_0" allowfullscreen>
 			</iframe>
 			<?php
-			acf_form(array(
-				'post_id'		=> 'new_post',
-				'post_title'	=> false,
-				'post_content'	=> false,
-				'new_post'		=> array(
-					'post_type'		=> 'billet',
-					'post_status'	=> 'publish'
-				),
-				'submit_value'	=> 'Send'
-			));
-
+				$form_shortcode = the_field('form_shortcode');
+				echo do_shortcode($form_shortcode);
 			?>	
 			</section>
 <?php get_footer(); ?>
