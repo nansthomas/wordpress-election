@@ -419,6 +419,9 @@ body {
 /**
  * Basic styles for links
  */
+#wpadminbar {
+  top: 50px; }
+
 @font-face {
   font-family: 'Gotham';
   src: url("../../fonts/Gotham-Medium.eot");
@@ -587,7 +590,7 @@ body {
   margin-bottom: 40px; }
 
 .homeProgram__image {
-  background: url("../../img/program-homeBlog.png");
+  background: url("../../img/program-homeBlog.jpg");
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -910,7 +913,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("../../img/background-homeHeader.png");
+  background-image: url("../../img/background-homeHeader.jpg");
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -1255,7 +1258,7 @@ body {
     margin: 10px 5px; }
 
 .socials {
-  background: url("../../img/background-socials.png");
+  background: url("../../img/background-socials.jpg");
   background-size: cover;
   background-position: center;
   height: 210px;
