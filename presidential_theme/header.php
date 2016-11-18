@@ -14,7 +14,27 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-            
+      <!-- FAFA -->
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '1689462871366802',
+            xfbml      : true,
+            version    : 'v2.8'
+          });
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/fr_FR/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }
+        (document, 'script', 'facebook-jssdk'));
+      </script>
+      <!-- END FAFA -->
+
             <header class="header">
                 <div class="header__nav">
                     <div id="header__image">
@@ -22,7 +42,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" width="50" height="36" />
                         </a>
                     </div>
-                    <?php 
+                    <?php
                     $args=array(
                         'theme_location' => 'header', // nom du slug
                         'menu' => 'header_fr', // nom à donner cette occurence du menu
@@ -33,7 +53,7 @@
                     wp_nav_menu($args);
                     ?>
                 </div>
-                
+
             </header>
 
             <!-- <div class="container"> -->
