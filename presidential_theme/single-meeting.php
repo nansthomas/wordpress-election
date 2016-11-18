@@ -51,11 +51,13 @@
             params
           );
         }
-        var subscribeMeeting = document.querySelector('#nf-field-9');
-        subscribeMeeting.addEventListener('click', function () {
-          console.log('SUBSCRIBE SEND');
-          FB.AppEvents.logEvent('SUBSCRIBE_MEETING');
-        });
+        setTimeout(function(){
+          var subscribeMeeting = document.querySelector('#nf-field-9');
+          subscribeMeeting.addEventListener('click', function () {
+            console.log('SUBSCRIBE SEND');
+            FB.AppEvents.logEvent('SUBSCRIBE_MEETING');
+          });
+        }, 2000);
       </script>
       <!-- // FAFA -->
 <?php get_footer(); ?>
