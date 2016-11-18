@@ -55,7 +55,12 @@
       params
     );
   }
+  var subscribeMeeting = document.querySelector('#nf-field-9');
+  subscribeMeeting.addEventListener('click', function () {
+    FB.AppEvents.logEvent('MODAL_BOOKING');
+  });
 </script>
+
 <!-- // FAFA -->
 
 <?php get_footer(); ?>
