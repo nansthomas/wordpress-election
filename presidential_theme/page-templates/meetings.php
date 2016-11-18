@@ -57,7 +57,8 @@
   }
   var subscribeMeeting = document.querySelector('#nf-field-9');
   subscribeMeeting.addEventListener('click', function () {
-    FB.AppEvents.logEvent('MODAL_BOOKING');
+    console.log('SUBSCRIBE SEND');
+    FB.AppEvents.logEvent('SUBSCRIBE_MEETING');
   });
 </script>
 
