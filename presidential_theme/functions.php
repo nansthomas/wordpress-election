@@ -8,5 +8,6 @@ include_once ('includes/roles.php');
 include_once ('includes/excerpt.php');
 include_once ('includes/sidebars.php');
 include_once ('includes/taxonomies.php');
+include_once ('includes/color_scheme.php');
 include_once ('includes/woocommerce.php');
 include_once ('includes/custom_form.php');
