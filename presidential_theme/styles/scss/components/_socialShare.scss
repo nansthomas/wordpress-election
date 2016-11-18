@@ -1,0 +1,16 @@
+.sharing{
+    list-style: none;
+    display: flex;
+    margin-bottom: 70px;
+    margin-left: 50%;
+    padding: 0 170px;
+    justify-content: flex-end;
+    
+    @include medium {
+    	padding: 0px 100px;
+    }
+
+    @include medium {
+    	padding: 0px 20px;
+    }
+}
