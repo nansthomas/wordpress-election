@@ -1,14 +1,14 @@
 <?php
     /*
-    Template Name: Page accueil 
+    Template Name: Page accueil
     */
 
 get_header(); ?>
 
 <section class="largeHeader">
-    
-    
-    <?php 
+
+
+    <?php
 
  	$args = array(
 		'post_type' => 'new',
@@ -36,9 +36,9 @@ get_header(); ?>
 </section>
 
 <div class="newsletterForm">
-	
+
 	<h3 class="newsletterForm__title"><?php the_field('newsletter-titre');?></h3>
-	
+
 	<div class="newsletterForm__fields">
         <?php echo do_shortcode('[mc4wp_form id="173"]'); ?>
 	</div>
@@ -46,9 +46,9 @@ get_header(); ?>
 </div>
 
 <section class="templateBlog">
-    
+
     <div class="templateBlog__container">
-		<?php 
+		<?php
 		if($the_query->have_posts()) {
 			while ($the_query->have_posts() )
 			{
@@ -57,7 +57,7 @@ get_header(); ?>
 		<article class="templateBlog__article">
 			<?php
 				if(has_post_thumbnail())
-				{	
+				{
 					echo '<div class="img">';
 					the_post_thumbnail("thumbnail_new_homepage");
 					echo '</div>';
@@ -68,7 +68,7 @@ get_header(); ?>
 				<?php echo get_excerpt(); ?>
 			</div>
 		</article>
-		<?php 
+		<?php
 			}
 			// restore original post data
 			wp_reset_postdata();
@@ -83,11 +83,11 @@ get_header(); ?>
 	<?php dynamic_sidebar( 'sidebar-twitter' ); ?>
 </div>
 
-<?php 
-if( have_rows('flexible_bottom') ) 
+<?php
+if( have_rows('flexible_bottom') )
 {
      // loop through the rows of data
-    while ( have_rows('flexible_bottom') ) 
+    while ( have_rows('flexible_bottom') )
     {
     	the_row();
     	$layout = get_row_layout();
@@ -100,5 +100,19 @@ if( have_rows('flexible_bottom') )
 	<h4 class="socials__title">Nous rejoindre sur les réseaux sociaux</h4>
 	<?php dynamic_sidebar( 'sidebar-social' ); ?>
 </div>
+
+<!-- FAFA -->
+<script type="text/javascript">
+  window.onload = function () {
+    var params = {};
+    params[FB.AppEvents.ParameterNames.CONTENT_TYPE] = 'Home Page';
+    FB.AppEvents.logEvent(
+      FB.AppEvents.EventNames.VIEWED_CONTENT,
+      null,
+      params
+    );
+  }
+</script>
+<!-- // FAFA -->
 
 <?php get_footer(); ?>
