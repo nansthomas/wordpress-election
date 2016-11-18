@@ -1325,6 +1325,12 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+  @media (max-width: 1000px) {
+    .sharing {
+      padding: 0px 100px; } }
+  @media (max-width: 1000px) {
+    .sharing {
+      padding: 0px 20px; } }
 
 input {
   padding: 15px 10px;
