@@ -44,7 +44,7 @@
         window.onload = function () {
           var params = {};
           params[FB.AppEvents.ParameterNames.CONTENT_TYPE] = 'Meeting Page';
-          params[FB.AppEvents.ParameterNames.CONTENT_ID] = <?php the_field('ville')?>;
+          params[FB.AppEvents.ParameterNames.CONTENT_ID] = '<?php the_field('ville')?>';
           FB.AppEvents.logEvent(
             FB.AppEvents.EventNames.VIEWED_CONTENT,
             null,
