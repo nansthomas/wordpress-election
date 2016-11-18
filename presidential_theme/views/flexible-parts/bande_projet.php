@@ -14,7 +14,7 @@
 			<?php echo $project_description_1; ?><br><br>
 			<?php echo $project_description_2; ?>
 		</p>
-		<a href="<?php echo $" class="button">
+		<a href="<?php echo $project_button_link; ?>" class="button">
 			<span><?php echo $project_button_text; ?></span>
 		</a>
 	</div>
