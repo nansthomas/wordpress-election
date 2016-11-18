@@ -20,6 +20,12 @@
 					<h4><?php the_field('adresse'); ?></h4>
 					<h5><?php the_field('heure'); ?></h5>
 				</div>
+<?php
+			$form_shortcode = get_field('form_shortcode');
+		}
+	}
+?>
+
 			</section>
 
 			<h2 class="reservation__title">Réservez votre place</h2>
@@ -31,11 +37,8 @@
 			src="https://www.google.com/maps/embed/v1/search?q=<?php echo get_field('adresse').' '.get_field('ville'); ?>&key=AIzaSyATj2xDYI8V_JZtWs0irnKq4GmorB84F_0" allowfullscreen>
 			</iframe>
 			<?php
-				$form_shortcode = get_field('form_shortcode');
 				echo $form_shortcode;
 				// echo do_shortcode($form_shortcode);
-		}
-	}
-?>
+			?>	
 			</section>
 <?php get_footer(); ?>
