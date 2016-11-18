@@ -7,19 +7,15 @@
 	display: flex;
     width: 80%;
     margin: 40px auto;
-    height: 500px;
+    height: 700px;
 
     @include semiMedium {
         flex-direction: column;
     }
 
-    form {
+    .nf-form-cont {
     	width: 90%;
     	margin-left: 5%;	
-
-        @include semiMedium {
-            margin-left: 0;
-        }
     }
 
     input[type=submit] {
