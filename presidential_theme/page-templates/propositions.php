@@ -4,7 +4,7 @@
 	Template Name: Page propositions
 	*/
 
-get_header();	
+get_header();
 
 ?>
 
@@ -24,8 +24,8 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 ?>
 
 <div class="propositionsList">
-		
-	<?php 
+
+	<?php
 
 		$args = array( 'post_type' => "proposition",
 				'posts_per_page' => -1,
@@ -45,12 +45,26 @@ $terms = get_terms( 'categorie-proposition', 'orderby=count&hide_empty=0' );
 	    		echo "<span class='propositionsList__itemTitle' >";
 	    		the_title();
 	    		echo "</span></li>";
-			} 
+			}
 		}
 		echo "</ul>";
 
 	?>
 
 </div>
+
+<!-- FAFA -->
+<script type="text/javascript">
+  window.onload = function () {
+    var params = {};
+    params[FB.AppEvents.ParameterNames.CONTENT_TYPE] = 'Proposition Page';
+    FB.AppEvents.logEvent(
+      FB.AppEvents.EventNames.VIEWED_CONTENT,
+      null,
+      params
+    );
+  }
+</script>
+<!-- // FAFA -->
 
 <?php get_footer(); ?>

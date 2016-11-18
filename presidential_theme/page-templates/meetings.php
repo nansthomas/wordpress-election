@@ -9,10 +9,10 @@
 <h1 class="meetings__title">Meetings à venir</h1>
 
 <section class="templateBlog">
-    
+
     <div class="templateBlog__container">
 
-		<?php 
+		<?php
 		$args = array(
 			'post_type' => 'meeting',
 		);
@@ -26,7 +26,7 @@
 		<article class="templateBlog__article">
 			<?php
 				if(has_post_thumbnail())
-				{	
+				{
 					echo '<div class="img">';
 					the_post_thumbnail("thumbnail_meetingpage");
 					echo '</div>';
@@ -35,7 +35,7 @@
 			<h5 class="templateBlog__articleTitle"> <a href=" <?php the_permalink(); ?> "><?php the_title(); ?></a></h5>
 			<h5 class="templateBlog__articleDate"> <a href=" <?php the_permalink(); ?> "><?php the_field('date'); ?></a></h5>
 		</article>
-		<?php 
+		<?php
 			}
 			// restore original post data
 			wp_reset_postdata();
@@ -44,5 +44,18 @@
 	</div>
 
 </section>
+<!-- FAFA -->
+<script type="text/javascript">
+  window.onload = function () {
+    var params = {};
+    params[FB.AppEvents.ParameterNames.CONTENT_TYPE] = 'All Meetings';
+    FB.AppEvents.logEvent(
+      FB.AppEvents.EventNames.VIEWED_CONTENT,
+      null,
+      params
+    );
+  }
+</script>
+<!-- // FAFA -->
 
 <?php get_footer(); ?>
