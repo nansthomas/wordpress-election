@@ -51,6 +51,11 @@
             params
           );
         }
+        var subscribeMeeting = document.querySelector('#nf-field-9');
+        subscribeMeeting.addEventListener('click', function () {
+          console.log('SUBSCRIBE SEND');
+          FB.AppEvents.logEvent('SUBSCRIBE_MEETING');
+        });
       </script>
       <!-- // FAFA -->
 <?php get_footer(); ?>
