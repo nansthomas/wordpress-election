@@ -38,7 +38,7 @@
 			<?php
 				$form_shortcode = get_field('form_shortcode');
 				echo $form_shortcode;
-				echo do_shortcode($form_shortcode);
+				// echo do_shortcode($form_shortcode);
 			?>	
 			</section>
 <?php get_footer(); ?>
